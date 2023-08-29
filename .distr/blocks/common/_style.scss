@@ -1,0 +1,104 @@
+/* Mixxins */
+@import '_mixins';
+@import '_vars';
+/* Fonts */
+@import 'fonts/_style';
+
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-height: 100%;
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	background: grey;
+
+}
+
+
+.wrapper {
+    max-width: 1920px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.container {
+	// max-width: 1576px;
+	// margin: 0 auto;
+	width: 100%;
+    max-width: 120rem;
+    padding: 0 10.75rem;
+    margin: 0 auto;
+	@include _1740 {
+		// max-width: 1139px;
+		padding: 0 118px; 
+
+	}
+	@include _652 {
+		// max-width: 744px;
+		padding: 0 12px;  
+	}
+	@include _320 {
+		// max-width: 296px;
+	}
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+br {
+	line-height: 0;
+}
+
+a:hover,
+a {
+	color: inherit;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.hidden {
+	display: none;
+}
+
+.link:hover {
+	color: $secondary;
+}
