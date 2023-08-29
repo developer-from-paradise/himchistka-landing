@@ -3,41 +3,6 @@
 *::after {
 	box-sizing: border-box;
 }
-
-.flex {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-}
-
-.--just-space {
-	justify-content: space-between;
-}
-
-.--just-center {
-	justify-content: center;
-}
-
-.--just-end {
-	justify-content: flex-end;
-}
-
-.--align-str {
-	align-items: stretch;
-}
-
-.--align-center {
-	align-items: center;
-}
-
-.--align-end {
-	align-items: flex-end;
-}
-
-.--dir-col {
-	flex-direction: column;
-}
-
 html {
 	font-size: 16px;
 }
@@ -46,10 +11,31 @@ html,
 body {
 	min-height: 100%;
 	position: relative;
+	font-family: 'Ubuntu';
+	background: grey;
 }
 
 body {
 	font-size: 1rem;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.3s;
+	display: block;
+}
+
+input {
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
 }
 
 ul,
@@ -65,6 +51,29 @@ h6 {
 	margin: 0;
 }
 
+button {
+	margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+	outline: none;
+	border: none;
+}
+
 .container {
-	
+	@include container($padding: 10.75rem);
+	@include _1740 {
+		@include container($padding: 7.313rem);
+	}
+	@include _992 {
+		@include container($padding: 12px);
+	}
+}
+
+.hidden {
+	display: none !important;
+}
+.link:hover {
+	color: $secondary;
 }

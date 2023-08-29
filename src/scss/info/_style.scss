@@ -1,0 +1,26 @@
+.info {
+    padding: 160px 0px;
+    position: relative;
+
+    &__circle {
+        width: 502px;
+        height: 502px;
+        top: 0;
+        left: 0;
+        
+        color:white;
+        background-color: $secondary;
+        border-radius: 50%;
+        position: absolute;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        color: $primary;
+
+        .emphasized {
+            color: $secondary;
+        }
+    }
+    
+}

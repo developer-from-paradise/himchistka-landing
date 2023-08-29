@@ -15,7 +15,7 @@ module.exports = function style() {
     .pipe(map.init())
     .pipe(bulk())
     .pipe(sass({
-      outputStyle: 'compressed'
+      outputStyle: "expanded"
     }).on('error', sass.logError))
     .pipe(prefixer({
       overrideBrowserslist: ['last 8 versions'],
@@ -32,7 +32,7 @@ module.exports = function style() {
     .pipe(clean({
       level: 2
     }))
-    .pipe(concat('style.min.css'))
+    .pipe(concat('style.css'))
     .pipe(map.write('../sourcemaps/'))
     .pipe(dest('build/css/'))
     .pipe(bs.stream())
