@@ -25,8 +25,8 @@
     {% include 'header/block.php' %}
     {% include 'advantages/block.php' %}
     {% include 'info/block.php' %}
-
-    {#% include 'footer/block.php' %#}
+    {% include 'contacts/block.php' %}
+    {% include 'form/block.php' %}
   {% endblock %}
 
     

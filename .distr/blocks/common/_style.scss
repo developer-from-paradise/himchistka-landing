@@ -24,7 +24,7 @@ body {
 	min-height: 100%;
 	position: relative;
 	font-family: 'Ubuntu', sans-serif;
-	background: grey;
+	// background: grey;
 
 }
 
@@ -101,4 +101,9 @@ img {
 
 .link:hover {
 	color: $secondary;
+}
+
+.text-link {
+	color: $secondary;
+	text-decoration: underline;
 }

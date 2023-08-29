@@ -1,0 +1,121 @@
+.contacts {
+    padding: 160px 0px;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        color: $primary;
+        text-align: center;
+        .emphasized {
+            color: $secondary;
+        }
+    }
+
+    &__subtitle {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 24px;
+        color: $primary;
+        max-width: 616px;
+    }
+
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        gap: 16px;
+        margin-top: 64px;
+        position: relative;
+
+    }
+
+    &__skin {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 44px;
+            background: linear-gradient(360deg, #FAFAFE 0%, rgba(250, 250, 254, 0.00) 100%);
+        }
+    }
+
+    &__points {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: scroll;
+        gap: 32px;
+        padding-right: 16px;
+        max-height: 32vw;
+        height: 100%;
+
+        @include _992 {
+            max-height: 488px;
+        }
+
+        &::-webkit-scrollbar {
+            background: $secondary;
+            border-radius: 8px;
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $secondary;
+            border-radius: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            border-radius: 8px;
+            background: $white;
+        }
+
+        &-point {
+            display: flex;
+
+            &-type {
+                font-size: 18px;
+                color: $secondary;
+                font-weight: 500;
+                padding-right: 24px;
+            }
+
+            &-data {
+                border-left: 1px solid $secondary;
+                padding-left: 24px; 
+                display: flex;
+                flex-direction: column;
+                font-size: 16px;
+                gap: 24px;
+
+                &-address {    
+                    font-weight: 300;
+                }
+
+                &-phone {
+                    font-weight: 500;
+                }
+
+                &-date {
+                    font-weight: 300;
+                    color: $secondary;
+                    .emphasized {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    &__map {
+        @include _992 {
+            display: none;
+        }
+    }
+
+}
