@@ -16,7 +16,7 @@
                     </ul>
                 </div>
 
-                <a href="#" class="advantages__info-btn">Скачать прайс <img src="./img/advantages/download-icon.svg" width="32px" height="32px" alt=""></a>
+                <a href="#" class="advantages__info-btn btn">Скачать прайс <img src="./img/advantages/download-icon.svg" width="32px" height="32px" alt=""></a>
             </div>
         </div>
     </div>

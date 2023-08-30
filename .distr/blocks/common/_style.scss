@@ -86,7 +86,6 @@ br {
 
 a:hover,
 a {
-	color: inherit;
 	transition: 0.3s;
 	text-decoration: none;
 }
@@ -112,4 +111,22 @@ input, textarea, button {
 .text-link {
 	color: $secondary;
 	text-decoration: underline;
+}
+
+.btn-b {
+	transition: 0.3s all;
+
+	&:hover {
+		background-color: $secondary;
+		color: $white;
+	}
+}
+
+.btn-w {
+	transition: 0.3s all;
+
+	&:hover {
+		background-color: $white;
+		color: $secondary;
+	}
 }

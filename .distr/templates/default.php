@@ -29,6 +29,7 @@
     {% include 'contacts/block.php' %}
     {% include 'form/block.php' %}
     {% include 'footer/block.php' %}
+    {% include 'rights/block.php' %}
   {% endblock %}
 
     

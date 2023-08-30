@@ -15,10 +15,10 @@
                 <label for="notfast" class="form-section__form-checkboxes-label">Не срочно</label>
             </div>
             
-            <button type="submit" class="form-section__form-btn">Заказать</button>
+            <button type="submit" class="form-section__form-btn btn-b">Заказать<img src="./img/form/alt-right.svg" width="32px" height="32px" alt=""></button>
         </form>
 
-        <div class="form-section__prolicy">
+        <div class="form-section__policy">
         Нажимая на кнопку «Заказать», вы даёте своё согласие на обработку персональных данных согласно <a href="" class="text-link">политике конфиденциальности</a>
         </div>
     </div>
