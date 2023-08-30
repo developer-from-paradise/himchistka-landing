@@ -4,83 +4,92 @@
     padding: 136px 172px 183px;
     position: relative;
     background: url("../img/service/field-service_bg.png") right 35px / 656px no-repeat;
-    &::after{
-        content: '';
-        position: absolute;
-        background: url("../img/service/car.png") right center no-repeat;
-        z-index: 1;
-        right: 0;
-        top: 55%;
-        transform: translate(24%, -50%);
-        max-width: 100%;
-        max-height: 100%;
-        width: 1341px;
-        height: 642px;
-    }
+    
     &__container{
+        display: flex;
+    }
+    &__box {
         display: flex;
         flex-direction: column;
         gap: 45px;
 
-    }
-    &__titles{
-        &-subtitle{
-            font-size: 16px;
-            line-height: 150%;
-            color: #004293;
-        }
-        &-title{
-            font-size: 32px;
-            line-height: 130%;
-            font-weight: 700;
-            color: #1C274C;
-            span{
+        &-titles{
+            &-subtitle{
+                font-size: 16px;
+                line-height: 150%;
                 color: #004293;
             }
+            &-title{
+                font-size: 32px;
+                line-height: 130%;
+                font-weight: 700;
+                color: #1C274C;
+                span{
+                    color: #004293;
+                }
+            }
         }
-    }
-    &__text{
-        display: flex;
-        width: 545px;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 35px;
-        gap: 16px;
-        &-txt{
-            color: #1C274C;
+
+        &-text {
+            max-width: 576px;
+            width: 100%;
+            color: $primary;
+            margin-left: 35px;
             font-size: 16px;
             font-weight: 300;
-            line-height: 150% 
+            line-height: 24px 
         }
-    }
-    &__buttons{
-        display: flex;
-        gap: 24px;
-        align-items: center;
-        &-btn1{
+        &-buttons{
             display: flex;
+            gap: 24px;
             align-items: center;
-            font-size: 16px;
-            color: #1C274C;
-            text-decoration: none;
-            text-align: center;
-            gap: 16px;
-            border-radius: 60px;
-            box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
-            background: #fff;
-            padding: 8px 8px 8px 16px;
+            &-btn1{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 219px;
+                width: 100%;
+                border-radius: 60px;
+                padding: 8px 8px 8px 24px;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: left;
+                height: fit-content;
+                cursor: pointer;
+                color: $primary;
+                background-color: $white;
+                box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+            }
+            &-btn2{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 150px;
+                width: 100%;
+                border-radius: 60px;
+                padding: 16px 32px;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: left;
+                height: fit-content;
+                cursor: pointer;
+                color: $primary;
+                background-color: $white;
+                box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+            }
         }
-        &-btn2{
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-            color: #1C274C;
-            text-decoration: none;
-            text-align: center;
-            border-radius: 60px;
-            box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
-            background: #FAFAFE;
-            padding: 16px 32px;
-        }
+    
+    
     }
+    
+
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: url('../img/service/car.png');
+    }
+    
+
+    
 }

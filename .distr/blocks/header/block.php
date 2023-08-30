@@ -57,10 +57,13 @@
            </nav>
 
 
-           <a href="tel:77777777" class="header__contacts-btn">
-                Заказать on-line
-                <span class="header__contacts-btn-subtext">заберём за три часа</span>
-                <img src="./img/common/phone.svg" alt="" class="" width="56px" height="56px"> 
+           <a href="tel:777777" class="header__contacts-btn btn-w">
+                <div class="header__contacts-btn-text">
+                    <span class="header__contacts-btn-text-title">Заказать on-line</span>
+                    <span class="header__contacts-btn-text-subtitle">заберём за три часа</span>
+                </div>
+                
+                <img src="./img/common/phone.svg" alt="" class="" width="40px" height="40px">
             </a>
             <button class="header__cart-btn"><img src="./img/header/shop.svg" alt=""></button>
         </div>

@@ -17,8 +17,8 @@
  
             <a href="tel:777777" class="footer__contacts-btn btn-w">
                 <div class="footer__contacts-btn-text">
-                    <span class="header__contacts-btn-text-title">Заказать on-line</span>
-                    <span class="header__contacts-btn-text-subtitle">заберём за три часа</span>
+                    <span class="footer__contacts-btn-text-title">Заказать on-line</span>
+                    <span class="footer__contacts-btn-text-subtitle">заберём за три часа</span>
                 </div>
                 
                 <img src="./img/common/phone.svg" alt="" class="" width="40px" height="40px">
