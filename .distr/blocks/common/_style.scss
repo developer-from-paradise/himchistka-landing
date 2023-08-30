@@ -93,6 +93,10 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+input, textarea, button {
+	border: none;
+	outline: none;
+}
 
 
 .hidden {

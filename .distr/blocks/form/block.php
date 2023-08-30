@@ -3,17 +3,19 @@
         <div class="form-section__title">Закажите химчистку с доставкой!</div>
 
         <form class="form-section__form">
-            <input type="text" name="" class="form-section-input" placeholder="Ваше имя и фамилия*">
-            <input type="tel" name="" class="form-section-input" placeholder="Телефон*"> 
-            <input type="email" name="" class="form-section-input" placeholder="Email">
-            <textarea name="" class="form-section-input" placeholder="Ваш комментарий"></textarea>
+            <input type="text" name="" class="form-section__form-input" placeholder="Ваше имя и фамилия*">
+            <input type="tel" name="" class="form-section__form-input" placeholder="Телефон*"> 
+            <input type="email" name="" class="form-section__form-input" placeholder="Email">
+            <textarea name="" class="form-section__form-input" placeholder="Ваш комментарий"></textarea>
 
-            <div class="form-section__checkboxes">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
+            <div class="form-section__form-checkboxes">
+                <input type="radio" name="speed" id="fast" class="form-section__form-checkboxes-radio">
+                <label for="fast" class="form-section__form-checkboxes-label">Срочно</label>
+                <input type="radio" name="speed" id="notfast" class="form-section__form-checkboxes-radio" checked>
+                <label for="notfast" class="form-section__form-checkboxes-label">Не срочно</label>
             </div>
             
-            <input type="submit" value="Заказать">
+            <button type="submit" class="form-section__form-btn">Заказать</button>
         </form>
 
         <div class="form-section__prolicy">
