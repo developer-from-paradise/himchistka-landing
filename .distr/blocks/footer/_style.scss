@@ -1,20 +1,63 @@
 .footer {
-    background: $primary;
+    background: $white;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15); 
 
-    &__rights {
+    .container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 16px 0px;
-        flex-wrap: wrap;        
-        @include _320 {
-            gap: 24px;
-            justify-content: center;
+        background: $white;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+        &-phone {
+            color: $secondary;
+            font-weight: 500;
+            font-size: 24px;
+            letter-spacing: 2px;
         }
-        &-text {
-            font-size: 12px;
+
+        &-subtext {
+            width: 100%;
+            font-size: 16px;
             font-weight: 300;
-            color: #FAFAFE;
+        }
+
+        &-btn {
+            max-width: 295px;
+            padding: 8px 8px 8px 24px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background: $secondary;
+            box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+            align-items: center;
+            border-radius: 60px;
+            color: #FFF;
+            margin-top: 23px;
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+
+                &-title {
+                    font-size: 20px;
+                }
+    
+                &-subtitle {
+                    font-size: 14px;
+                }
+            }
+
+            
         }
     }
 }

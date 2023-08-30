@@ -1,0 +1,25 @@
+.rights {
+    background: $primary;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        flex-wrap: wrap;   
+    }
+     
+    
+
+    @include _320 {
+        gap: 24px;
+        justify-content: center;
+    }
+
+    &__text {
+        font-size: 12px;
+        font-weight: 300;
+        color: #FAFAFE;
+    }
+}

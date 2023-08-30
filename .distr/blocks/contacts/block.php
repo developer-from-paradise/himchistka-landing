@@ -13,7 +13,7 @@
                 <!-- Точки -->
                 
                 <div class="contacts__points-point">
-                    <div class="contacts__points-point-type">Сана<br>Центральный<br>офис</div>
+                    <div class="contacts__points-point-type">Сана Центральный офис</div>
                     <div class="contacts__points-point-data">
                         <div class="contacts__points-point-data-address">
                             БЦ Купеческий Двор, Социалистическая ул., 74,  6 этаж, каб. 605А
@@ -29,7 +29,46 @@
                 </div>
 
                 <div class="contacts__points-point">
-                    <div class="contacts__points-point-type">Сана<br>Центральный<br>офис</div>
+                    <div class="contacts__points-point-type">Сана Экспресс</div>
+                    <div class="contacts__points-point-data">
+                        <div class="contacts__points-point-data-address">
+                        ТЦ Золотой Вавилон, ул. Малиновского, 25, цокольноый этаж, слева от главного входа.
+                        </div>
+                        <div class="contacts__points-point-data-phone">
+                            8 (800) 123-00-02
+                        </div>
+                        
+                        <div class="contacts__points-point-data-date">
+                            Пн-Вс <span class="emphasized">с 9:00 - 21:00</span>
+                            <br>
+                            Сб-Вс <span class="emphasized">с 10:00 - 19:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts__points-point active-point">
+                    <div class="contacts__points-point-type">Пункт приема</div>
+                    <div class="contacts__points-point-data">
+                        <div class="contacts__points-point-data-address">
+                            Северный, просп. Космонавтов, 2/2, д 451
+                        </div>
+                        <div class="contacts__points-point-data-phone">
+                            8 (800) 123-00-04
+                        </div>
+                        
+                        <div class="contacts__points-point-data-date">
+                            Пн-Вс <span class="emphasized">с 9:00 - 22:00</span>
+                            <br>
+                            Сб-Вс <span class="emphasized">выходной</span>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Show more box -->
+                <div id="show_more_box">
+
+                <div class="contacts__points-point">
+                    <div class="contacts__points-point-type">Сана Центральный офис</div>
                     <div class="contacts__points-point-data">
                         <div class="contacts__points-point-data-address">
                             БЦ Купеческий Двор, Социалистическая ул., 74,  6 этаж, каб. 605А
@@ -45,7 +84,7 @@
                 </div>
 
                 <div class="contacts__points-point">
-                    <div class="contacts__points-point-type">Сана<br>Центральный<br>офис</div>
+                    <div class="contacts__points-point-type">Сана Центральный офис</div>
                     <div class="contacts__points-point-data">
                         <div class="contacts__points-point-data-address">
                             БЦ Купеческий Двор, Социалистическая ул., 74,  6 этаж, каб. 605А
@@ -61,7 +100,7 @@
                 </div>
 
                 <div class="contacts__points-point">
-                    <div class="contacts__points-point-type">Сана<br>Центральный<br>офис</div>
+                    <div class="contacts__points-point-type">Сана Центральный офис</div>
                     <div class="contacts__points-point-data">
                         <div class="contacts__points-point-data-address">
                             БЦ Купеческий Двор, Социалистическая ул., 74,  6 этаж, каб. 605А
@@ -77,39 +116,7 @@
                 </div>
 
                 <div class="contacts__points-point">
-                    <div class="contacts__points-point-type">Сана<br>Центральный<br>офис</div>
-                    <div class="contacts__points-point-data">
-                        <div class="contacts__points-point-data-address">
-                            БЦ Купеческий Двор, Социалистическая ул., 74,  6 этаж, каб. 605А
-                        </div>
-                        <div class="contacts__points-point-data-phone">
-                            8 (800) 123-00-01
-                        </div>
-                        
-                        <div class="contacts__points-point-data-date">
-                            Пн-Вс <span class="emphasized">круглосуточно</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contacts__points-point">
-                    <div class="contacts__points-point-type">Сана<br>Центральный<br>офис</div>
-                    <div class="contacts__points-point-data">
-                        <div class="contacts__points-point-data-address">
-                            БЦ Купеческий Двор, Социалистическая ул., 74,  6 этаж, каб. 605А
-                        </div>
-                        <div class="contacts__points-point-data-phone">
-                            8 (800) 123-00-01
-                        </div>
-                        
-                        <div class="contacts__points-point-data-date">
-                            Пн-Вс <span class="emphasized">круглосуточно</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contacts__points-point">
-                    <div class="contacts__points-point-type">Сана<br>Центральный<br>офис</div>
+                    <div class="contacts__points-point-type">Сана Центральный офис</div>
                     <div class="contacts__points-point-data">
                         <div class="contacts__points-point-data-address">
                             БЦ Купеческий Двор, Социалистическая ул., 74,  6 этаж, каб. 605А
@@ -124,13 +131,18 @@
                     </div>
                 </div>
                 <!-- Points -->
+                </div>
+                <!-- Show more box -->
+                <button class="contacts__btn-show-more" id="show_more_btn">Показать ещё</button>
+            <!-- Box -->
             </div>
             <!-- Skin -->
             </div>
 
+
             <!-- Map -->
-            <div class="contacts__map">
-                <img src="./img/contacts/map.png" alt="" class="contacts__map-img">
+            <div class="contacts__map" id="map">
+        
             </div>
           </div>
           
