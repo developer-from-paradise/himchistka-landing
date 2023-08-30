@@ -1,0 +1,20 @@
+.footer {
+    background: $primary;
+
+    &__rights {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0px;
+        flex-wrap: wrap;        
+        @include _320 {
+            gap: 24px;
+            justify-content: center;
+        }
+        &-text {
+            font-size: 12px;
+            font-weight: 300;
+            color: #FAFAFE;
+        }
+    }
+}
