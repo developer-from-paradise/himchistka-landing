@@ -12,6 +12,21 @@
     font-size: 42px;
     font-weight: 700;
     line-height: 100%;
+    
+    @media(max-width: 1200px) {
+      font-size: 32px;
+    }
+
+    @media(max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    height: fit-content;
+    @media(max-width: 1200px) {
+      font-size: 14px;
+    }
   }
 
   &-btn {
@@ -69,14 +84,63 @@
 
   &__box {
     border-radius: 56px;
-    background: #F8FBFF;
+    background: #F8FBFF url('../img/main/main-circle-decore.png') ;
+    background-image:url('../img/main/main-circle-decore.png'), url('../img/main/main-circle-decore.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right -104px bottom -143px,  left 70% top 59px;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
     padding: 102px 160px;
     overflow: hidden;
     position: relative;
+    height: fit-content;
+
+    @media(max-width: 1480px) {
+      background-image:url('../img/main/main-circle-decore.png');
+      background-position: right -104px bottom 50%;
+    }
+
+    @media(max-width: 1200px) {
+      padding: 56px 120px;
+    }
 
     @media(max-width: 768px) {
+      border-radius: 24px;
       padding: 24px;
+      background: #F8FBFF;
+      overflow: unset;
+    }
+
+    &-counter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #69C0F1;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-size: 400px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 75%;
+      opacity: 0.15;
+      pointer-events: none;
+      margin-top: 10px;
+
+      &-second {
+        color:#004293;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        display: none;
+
+        @media(max-width: 768px) {
+          display: block;
+        }
+
+        span {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
     }
 
     &-content {
@@ -87,6 +151,11 @@
 
       @media(max-width: 1530px) {
         max-width: 440px;
+      }
+
+      @media(max-width: 1200px) {
+        max-width: 360px;
+        gap: 32px;
       }
 
     }
@@ -103,7 +172,7 @@
       @media(max-width: 1400px) {
         max-height: 348px;
         width: 50%;
-        left: 60%;
+        left: 68%;
       }
 
       @media(max-width: 768px) {
@@ -123,6 +192,9 @@
 
   .swiper {
 
+    @media(max-width: 768px) {
+      padding: 0 8px;
+    }
 
     &-slide {
       overflow: hidden;
@@ -142,6 +214,17 @@
         flex-direction: column;
         align-items: center;
         gap: 24px;
+
+        @media(max-width: 768px) {
+          width: calc(100% + 20px);
+          left: 0;
+          background: unset;
+          box-shadow: unset;
+          padding: 0;
+          justify-content: space-between;
+          flex-direction: row;
+          margin: 0 -10px;
+        }
       }
     }
 
@@ -154,6 +237,39 @@
       top: unset;
       left: unset;
       right: unset;
+
+      @media(max-width: 768px) {
+        display: none;
+      }
+
+      &-bullet {
+        opacity: 1;
+        background: #0042934D;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 50%;
+          transition: .2s;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+        }
+
+        &-active {
+          background: #004293;
+
+          &:before {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #0042934D;
+          }
+        }
+      }
     }
 
     &-button-prev, &-button-next {
@@ -169,6 +285,11 @@
       padding: 5.33px;
       background: #004293;
       border-radius: 50%;
+      
+      @media(max-width: 768px) {
+        transform: rotate(0deg);
+      }
+
 
       &:after {
         color: white;
@@ -180,6 +301,7 @@
       &:after {
         transform: translate(-1px, 0);
       }
+      
     }
 
     &-button-next {
@@ -259,4 +381,7 @@
     //   }
     // }
   }
+}
+.swiper-slide {
+  height: auto !important;
 }

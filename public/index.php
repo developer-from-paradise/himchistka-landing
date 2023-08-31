@@ -98,6 +98,14 @@
 </div>
   <div class="container">
     <div class="main__box ">
+      <div class="main__box-counter">
+        2
+      </div>
+      
+      <div class="main__box-counter-second">
+        2<span>/5</span>
+      </div>
+
       <div class="swiper-nav-box">
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination">
@@ -108,7 +116,7 @@
         <div class="main__title">Срочная химчистка! Заберем на&nbsp;3&nbsp;часа!</div>
         <div class="swiper main-swiper">
           <div class="main__textbox swiper-wrapper">
-            <div class="swiper-slide main__text">Lorem Ipsum&nbsp;&mdash; это текст-&laquo;рыба&raquo;, часто используемый в&nbsp;печати и&nbsp;вэб-дизайне. Lorem Ipsum является стандартной &laquo;рыбой&raquo; для текстов на&nbsp;латинице с&nbsp;начала XVI&nbsp;века. В&nbsp;то&nbsp;время некий безымянный печатник создал большую коллекцию размеров и&nbsp;форм шрифтов.</div>
+            <div class="swiper-slide main__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, quasi, aperiam in eius non, vero doloribus perferendis vel facilis quidem tempore dolores. Iure sint quam velit molestias facere minus cupiditateLorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, quasi, aperiam in eius non, vero doloribus perferendis vel facilis quidem tempore dolores. Iure sint quam velit molestias facere minus cupiditate!</div>
             <div class="swiper-slide main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur&nbsp;ab, iusto atque sequi earum maxime rerum obcaecati odio tempora dolore! Unde reiciendis totam provident fugit ducimus voluptates molestiae mollitia vel.</div>
             <div class="swiper-slide main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident architecto quasi, esse, iste et&nbsp;maxime omnis obcaecati cum ducimus, itaque suscipit voluptatibus illo dolor. Quod inventore similique debitis aperiam nulla.</div>
             <div class="swiper-slide main__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut&nbsp;molestiae sint dolorem et&nbsp;quidem cumque voluptatum quae, fugiat hic repudiandae, ad&nbsp;esse eum praesentium doloribus, ea&nbsp;optio minus nulla?</div>

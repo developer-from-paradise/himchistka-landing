@@ -59,7 +59,6 @@ var swiper = new Swiper(".main-swiper", {
   direction: "vertical",
   loop: true,
   slidesPerView: 1,
-  autoHeight: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -71,9 +70,11 @@ var swiper = new Swiper(".main-swiper", {
   on:{
     init:function(){
       setSlideHeight(this);
+      mainCounter()
     },
     slideChangeTransitionEnd:function(){
       setSlideHeight(this);
+      mainCounter()
     }
   }
 });
@@ -83,9 +84,48 @@ function setSlideHeight(that){
       var currentSlide = that.activeIndex;
       var newHeight = $(that.slides[currentSlide]).height();
 
-      $('.swiper-wrapper,.swiper-slide').css({ height : newHeight })
+
+
+       $('.swiper-slide').animate({ 
+        height : newHeight
+       })
       that.update();
- }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mainCounter() {
+  const couterMainSwiper = document.querySelector('.main__box-counter')
+  const couterMainSwiperSecond = document.querySelector('.main__box-counter-second')
+  const mainSwiperSlide = $('.swiper-slide-active').attr('aria-label')
+  const mainSwiperSlideSecond = $('.swiper-slide-active').attr('aria-label')
+
+  if (mainSwiperSlide.replace(/ .*/,'') === 'NaN') {
+    couterMainSwiper.innerHTML = '1'
+    couterMainSwiperSecond.innerHTML = ''
+    couterMainSwiperSecond.insertAdjacentHTML('beforeend', `1<span>/${mainSwiperSlideSecond.split(" ").pop()}</span>`)
+    // 
+  } else {
+    couterMainSwiper.innerHTML = mainSwiperSlide.replace(/ .*/,'')
+    couterMainSwiperSecond.innerHTML = ''
+    couterMainSwiperSecond.insertAdjacentHTML('beforeend', `${mainSwiperSlide.replace(/ .*/,'')}<span>/${mainSwiperSlideSecond.split(" ").pop()}</span>`)
+  }
+
+  console.log(mainSwiperSlideSecond.split(" ").pop())
+}
+
 var skroll = new Skroll()
 			.add(".about__img",{
 				animation:"slideInLeft",
