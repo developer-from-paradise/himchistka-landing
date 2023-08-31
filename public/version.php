@@ -1,0 +1,3 @@
+<?php
+/* Defaults */
+$title = 'Сафа';
