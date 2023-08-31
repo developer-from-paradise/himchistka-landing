@@ -40,38 +40,67 @@
              
             <nav class="header__navbar">
                 <ul class="header__navbar-links">
-                <li class="header__navbar-link dropdown-btn">
-                    <a href="">Услуги</a>
-                    <!-- <div class="dropdown">
-                        <ul class="dropdown__links">
-                            <li class="dropdown__link">
-                                <a href="" class="link">Одежда</a>
-                                <div class="dropwdown__sublink-menu">
-                                    <ul class="dropdown__sublinks">
-                                        <li class="dropdown__sublink"><a href="" class="link">Деловая</a></li>
-                                        <li class="dropdown__sublink"><a href="" class="link">Повседневная</a></li>
-                                        <li class="dropdown__sublink"><a href="" class="link">Торжественная</a></li>
-                                        <li class="dropdown__sublink"><a href="" class="link">Верхняя</a></li>
-                                        <li class="dropdown__sublink"><a href="" class="link">Детская</a></li>
-                                        <li class="dropdown__sublink"><a href="" class="link">Домашняя</a></li>
-                                        <li class="dropdown__sublink"><a href="" class="link">Спортивная</a></li>
-                                        <li class="dropdown__sublink"><a href="" class="link">Форменная</a></li>
-                                    </ul>
+                    <li class="header__navbar-link dropdown">
+                        <div class="dropdown-btn dropdown-btn-first">
+                            <div class="dropdown-btn-text">Услуги</div>  
+                            <div class="dropdown-list-first">
+                                <div class="dropdown-list">
+                                    <div class="dropdown-btn dropdown-btn-second">
+                                        <div class="dropdown-btn-text">Одежда</div>
+                                        <div class="dropdown-list">
+                                            <a href="#">первый</a>
+                                            <a href="#">первый-первый</a>
+                                            <a href="#">Торжественная</a>
+                                            <a href="#">Верхняя</a>
+                                            <a href="#">Детская</a>
+                                            <a href="#">Домашняя</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-btn dropdown-btn-second">
+                                        <div class="dropdown-btn-text">Аксессуары</div>
+                                        <div class="dropdown-list">
+                                            <a href="#">второй</a>
+                                            <a href="#">второй-первый</a>
+                                            <a href="#">Торжественная</a>
+                                            <a href="#">Верхняя</a>
+                                            <a href="#">Детская</a>
+                                            <a href="#">Домашняя</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-btn dropdown-btn-second">
+                                        <div class="dropdown-btn-text">Домашний интерьер</div>
+                                        <div class="dropdown-list">
+                                            <a href="#">третий</a>
+                                            <a href="#">третий-первый</a>
+                                            <a href="#">Торжественная</a>
+                                            <a href="#">Верхняя</a>
+                                            <a href="#">Детская</a>
+                                            <a href="#">Домашняя</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-btn dropdown-btn-second">
+                                        <div class="dropdown-btn-text">Обувь</div>
+                                        <div class="dropdown-list">
+                                            <a href="#">Четвертый</a>
+                                            <a href="#">четвертый-первый</a>
+                                            <a href="#">Торжественная</a>
+                                            <a href="#">Верхняя</a>
+                                            <a href="#">Детская</a>
+                                            <a href="#">Домашняя</a>
+                                        </div>
+                                    </div>
                                 </div>
                                 
-                            </li>
-                            <li class="dropdown__link"><a href="" class="link">Аксессуары</a></li>
-                            <li class="dropdown__link"><a href="" class="link">Домашний интерьер</a></li>
-                            <li class="dropdown__link"><a href="" class="link">Обувь</a></li>
-                            <li class="dropdown__link"><a href="" class="link">Особые услуги</a></li>
-                        </ul>
-                    </div> -->
-                </li>
-
-                   <li class="header__navbar-link"><a href="">Акции</a></li>
-                   <li class="header__navbar-link"><a href="">Магазин</a></li>
-                   <li class="header__navbar-link"><a href="">О компании</a></li>
-                   <li class="header__navbar-link"><a href="">Контакты</a></li>
+                                <div class="dropdown-list-content">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="header__navbar-link"><a href="#">Акции</a></li>
+                    <li class="header__navbar-link"><a href="#">Магазин</a></li>
+                    <li class="header__navbar-link"><a href="#">О компании</a></li>
+                    <li class="header__navbar-link"><a href="#">Контакты</a></li>
                 </ul>
                 
            </nav>

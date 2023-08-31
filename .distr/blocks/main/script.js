@@ -30,7 +30,7 @@ function setSlideHeight(that){
 
 
 
-       $('.swiper-slide').animate({ 
+       $('.swiper-wrapper,.swiper-slide').animate({ 
         height : newHeight
        })
       that.update();
@@ -60,12 +60,9 @@ function mainCounter() {
     couterMainSwiper.innerHTML = '1'
     couterMainSwiperSecond.innerHTML = ''
     couterMainSwiperSecond.insertAdjacentHTML('beforeend', `1<span>/${mainSwiperSlideSecond.split(" ").pop()}</span>`)
-    // 
   } else {
     couterMainSwiper.innerHTML = mainSwiperSlide.replace(/ .*/,'')
     couterMainSwiperSecond.innerHTML = ''
     couterMainSwiperSecond.insertAdjacentHTML('beforeend', `${mainSwiperSlide.replace(/ .*/,'')}<span>/${mainSwiperSlideSecond.split(" ").pop()}</span>`)
   }
-
-  console.log(mainSwiperSlideSecond.split(" ").pop())
 }
