@@ -4,7 +4,8 @@
     background-position-x: calc(0% + 10%);
     background-size: 732px;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
- 
+    overflow: hidden;
+    
     @include _1280 {
         background: url(../img/common/round.png) no-repeat, url(../img/common/round.png) no-repeat;
         background-size: 362px, 362px;

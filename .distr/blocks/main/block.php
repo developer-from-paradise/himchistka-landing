@@ -1,4 +1,8 @@
+
 <section class="main">
+<div class="bubble-container-1">
+      <!-- Пустой контейнер для пузырей -->
+</div>
   <div class="container">
     <div class="main__box ">
       <div class="swiper-nav-box">

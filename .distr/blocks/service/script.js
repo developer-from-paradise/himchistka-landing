@@ -1,14 +1,11 @@
 var skroll = new Skroll()
-			.add(".about__img",{
+			.add(".service__box",{
 				animation:"slideInLeft",
 				delay:80,
 				duration:800
 			})
-            .add(".about__info-text",{
+            .add(".service__img",{
 				animation:"slideInRight",
 				delay:80,
 				duration:800
-			})
-            
-            
-            .init();
+			}).init();

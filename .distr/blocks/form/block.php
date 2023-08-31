@@ -1,4 +1,7 @@
 <section class="form-section">
+    <div class="bubble-container-2">
+        <!-- Котейнер для пузырьков -->
+    </div>
     <div class="container">
         <div class="form-section__title">Закажите химчистку с доставкой!</div>
 

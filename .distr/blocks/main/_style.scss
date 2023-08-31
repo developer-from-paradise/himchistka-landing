@@ -2,7 +2,10 @@
   padding: 72px 20px 150px;
   display: flex;
   align-items: center;
-
+  background: linear-gradient(to top, #489DE8,  #6BC5F2, #FEFFFF);
+  position: relative;
+  overflow: hidden;
+  
   &__title {
     color: #004293;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -99,8 +102,8 @@
       
       @media(max-width: 1400px) {
         max-height: 348px;
-        width: 40%;
-        left: 75%;
+        width: 50%;
+        left: 60%;
       }
 
       @media(max-width: 768px) {

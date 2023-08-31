@@ -18,9 +18,8 @@
         </div>
 
 
-        <div class="service__img">
-            <!-- <img src="./img/service/car.png" alt=""> -->
-        </div>
+        
+        <img src="./img/service/car.png" class="service__img">
 
 
         

@@ -150,11 +150,11 @@
     }
 
     &__btn-show-more {
+        display: none;
         font-size: 16px;
         line-height: 24px;
         color: $secondary;
         position: relative;
-        display: flex;
         margin: 0 auto;
         padding-right: 12px;
         &::before {
@@ -166,12 +166,17 @@
             background-size: contain;
             left: 100%;
         }
+
+        @include _768 {
+            display: flex;
+        }
     }
 
     &__map {
         width: 760px;
         height: 600px;
-
+        border-radius: 56px;
+        overflow: hidden;
 
         @include _992 {
             display: none;
