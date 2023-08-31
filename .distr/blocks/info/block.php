@@ -1,16 +1,12 @@
 <section class="info">
     <div class="container">
          <div class="info__box">
-    <div></div>
-            <!-- <div class="info__circle">
-                <div class="info__title">
+            <div class="info__cirlce">
+                <h2 class="info__title">
                     Профессиональное обслуживание <span class="emphasized">Вашего</span> бизнеса
-                </div>
-                <div class="info__title">
-                    Профессиональное обслуживание <span class="emphasized">Вашего</span> бизнеса
-                </div>
-            </div>
-            -->
+                </h2>
+            </div>   
+           
 
 
           

@@ -1,40 +1,116 @@
 .info {
     padding: 160px 0px;
-    position: relative;
+    height: 80vh;
 
-    &__circle {
+    @include _992 {
+        height: fit-content;
+        padding: 0;
+    }
+
+    .container {
+        padding: 0;
+        height: 100%;
+    }
+
+    &__box {
         position: relative;
+        height: 100%;
+        display: flex;
 
     }
-    &__title {
-        font-weight: 700;
-        font-size: 48px;
-        color: $primary;
-        white-space: nowrap;
-        &:nth-child(1) {
-            top: 0;
-            left: 0;
-            // color:white;
-            position: absolute;
-            overflow: hidden;
 
-            color:white;
+    &__cirlce {
+        position: absolute;
+        overflow: hidden;
+        padding-left: 50px;
+        background-color: #000;
+        min-height: 140px;
+        height: 502px;
+        width: 51vw;
+        color: #004293;
+        filter: invert(100%);
+
+        @include _1740 {
+            width: 72vw;
+        }
+        @include _992 {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: calc(0% - 5vw);
+            z-index: -1;
             width: 502px;
             height: 502px;
-            background-color: $secondary;
+            background-color: #ffbd6c;
             border-radius: 50%;
-            position: absolute;
+
+            @include _1280 {
+                left: calc(0% - 14vw);
+            }
+
+            @include _992 {
+                left: calc(0% - 30vw);
+            }
+
+            @include _480 {
+                left: calc(0% - 32vw);
+                width: 199px;
+                height: 199px;
+            }
+        } 
+    }
+    &__title {
+        width: fit-content;
+        font-weight: 700;
+        font-size: 48px;
+        color: #ffbd6c;
+        mix-blend-mode: difference;
+        position: absolute;
+        top: calc(0% - -35vh);
+        left: calc(0% - -9vw);
+
+        @include _992 {
+            top: calc(0% - -11vh);
+            font-size: 32px;
         }
 
-        .emphasized {
-            color: $secondary;
+        @include _480 {
+            font-size: 24px;
+            line-height: 27.58px;
+            text-align: center;
+            top: calc(0% - -7vh);
         }
+
     }
 
+
     &__circles {
+        position: absolute;
         display: flex;
         justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        left: calc(0% - -9vw);
+        margin: auto auto 0 auto;
+        
+        @include _1280 {
+            left: calc(0% - -21vw);
+        }
+
+        @include _992 {
+            position: initial;
+            margin-bottom: 10vw;
+            padding-top: 205px;
+        }
+
         &-circle {
+            position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,18 +124,55 @@
             box-shadow: 0px 4px 40px 0px rgba(28, 39, 76, 0.24);
             font-size: 18px;
             font-weight: 300;
+            
+            
 
             &:nth-child(1) {
-                left: 20px;
+                left: calc(0% - -35vw);
+                animation: rockingAnimation-10 4s ease-in-out infinite;
+
+                @include _1280 {
+                    left: calc(0% - -10vw);
+                }
             }
             &:nth-child(2) {
-                left: 20px;
+                left: calc(0% - -48vw);
+                top: calc(0% - -12vh);
+                animation: rockingAnimation-20 4s ease-in-out infinite;
+                @include _1280 {
+                    left: calc(0% - -26vw);
+                }
             }
             &:nth-child(3) {
-                left: 20px;
+                left: calc(0% - -61vw);
+                top: calc(0% - -4vh);
+                animation: rockingAnimation-30 4s ease-in-out infinite;
+                @include _1280 {
+                    left: calc(0% - -43vw);
+                }
             }
             &:nth-child(4) {
-                left: 20px;
+                left: calc(0% - -74vw);
+                top: calc(0% - -23vh);
+                animation: rockingAnimation-40 4s ease-in-out infinite;
+                @include _1280 {
+                    left: calc(0% - -58vw);
+                    top: calc(0% - -20vh);
+
+                }
+            }
+
+            @include _992 {
+                position: relative;
+                left: 0 !important;
+                animation: none !important;
+            }
+            
+            @include _480 {
+                max-width: 120px;
+                max-height: 120px;
+                font-size: 14px;
+                gap: 6px;
             }
         }
     }
@@ -68,4 +181,18 @@
 
  
     
+}
+
+
+
+
+@for $i from 10 through 40 {
+    @keyframes rockingAnimation-#{$i} {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translate(#{randomNum(5, 20)}px, #{randomNum(5, 20)}px);
+        }
+    }
 }
