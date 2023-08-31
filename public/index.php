@@ -230,7 +230,7 @@
             <div class="contacts__points">
                 <!-- Точки -->
                 
-                <div class="contacts__points-point">
+                <div class="contacts__points-point active-point" id="first_point">
                     <div class="contacts__points-point-type">Сана Центральный офис</div>
                     <div class="contacts__points-point-data">
                         <div class="contacts__points-point-data-address">
@@ -246,7 +246,7 @@
                     </div>
                 </div>
 
-                <div class="contacts__points-point">
+                <div class="contacts__points-point" id="second_point">
                     <div class="contacts__points-point-type">Сана Экспресс</div>
                     <div class="contacts__points-point-data">
                         <div class="contacts__points-point-data-address">
@@ -264,7 +264,7 @@
                     </div>
                 </div>
 
-                <div class="contacts__points-point active-point">
+                <div class="contacts__points-point" id="third_point">
                     <div class="contacts__points-point-type">Пункт приема</div>
                     <div class="contacts__points-point-data">
                         <div class="contacts__points-point-data-address">
@@ -285,7 +285,7 @@
                 <!-- Show more box -->
                 <div id="show_more_box">
 
-                <div class="contacts__points-point">
+                <div class="contacts__points-point" id="fourth_point">
                     <div class="contacts__points-point-type">Сана Центральный офис</div>
                     <div class="contacts__points-point-data">
                         <div class="contacts__points-point-data-address">
@@ -301,7 +301,7 @@
                     </div>
                 </div>
 
-                <div class="contacts__points-point">
+                <div class="contacts__points-point" id="fifth_point">
                     <div class="contacts__points-point-type">Сана Центральный офис</div>
                     <div class="contacts__points-point-data">
                         <div class="contacts__points-point-data-address">
@@ -317,37 +317,6 @@
                     </div>
                 </div>
 
-                <div class="contacts__points-point">
-                    <div class="contacts__points-point-type">Сана Центральный офис</div>
-                    <div class="contacts__points-point-data">
-                        <div class="contacts__points-point-data-address">
-                            БЦ Купеческий Двор, Социалистическая ул., 74,  6 этаж, каб. 605А
-                        </div>
-                        <div class="contacts__points-point-data-phone">
-                            8 (800) 123-00-01
-                        </div>
-                        
-                        <div class="contacts__points-point-data-date">
-                            Пн-Вс <span class="emphasized">круглосуточно</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contacts__points-point">
-                    <div class="contacts__points-point-type">Сана Центральный офис</div>
-                    <div class="contacts__points-point-data">
-                        <div class="contacts__points-point-data-address">
-                            БЦ Купеческий Двор, Социалистическая ул., 74,  6 этаж, каб. 605А
-                        </div>
-                        <div class="contacts__points-point-data-phone">
-                            8 (800) 123-00-01
-                        </div>
-                        
-                        <div class="contacts__points-point-data-date">
-                            Пн-Вс <span class="emphasized">круглосуточно</span>
-                        </div>
-                    </div>
-                </div>
                 <!-- Points -->
                 </div>
                 <!-- Show more box -->
