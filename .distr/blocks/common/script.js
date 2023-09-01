@@ -27,7 +27,7 @@
 
 
 
-//   function createCircle_2() {
+// function createCircle_2() {
 //     let section = document.querySelector(".bubble-container-2");
 //     let circleEl = document.createElement("span");
 //     let size = Math.random() * 60;
@@ -50,7 +50,6 @@
 //     setTimeout(() => {
 //       circleEl.remove();
 //     }, 4000);
-//   } 
+//  } 
   
 // setInterval(createCircle_2, 50);
-  

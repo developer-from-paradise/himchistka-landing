@@ -16,7 +16,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         
         &-phone {
             color: $secondary;
@@ -43,6 +43,7 @@
             border-radius: 60px;
             color: #FFF;
             margin-top: 23px;
+            gap: 47px;
 
             &-text {
                 display: flex;
@@ -55,6 +56,14 @@
                 &-subtitle {
                     font-size: 14px;
                 }
+            }
+
+            &-ico {
+                width: 40px;
+                height: 40px;
+                background-color: $white;
+                border-radius: 50%;
+                padding: 6.67px;
             }
 
             

@@ -1,3 +1,27 @@
+$('.dropdown-btn').hover(function(){
+    $('.dropdown').css('display', 'flex').hide().slideDown();
+}, function(){
+     $('.dropdown').slideUp();
+});
+
+$('.link-cloth').hover(function(){
+    $('.extra-cloth').css('display', 'flex').hide().slideDown();
+}, function(){
+    $('.extra-cloth').css('display', 'none');
+});
+
+$('.link-acce').hover(function(){
+    $('.extra-acce').css('display', 'flex').hide().slideDown();
+}, function(){
+    $('.extra-acce').css('display', 'none');
+});
+
+$('.link-house').hover(function(){
+    $('.extra-house').css('display', 'flex').hide().slideDown();
+}, function(){
+    $('.extra-house').css('display', 'none');
+});
+
 // function createCircle_1() {
 //     let section = document.querySelector(".bubble-container-1");
 //     let circleEl = document.createElement("span");
@@ -27,7 +51,7 @@
 
 
 
-//   function createCircle_2() {
+// function createCircle_2() {
 //     let section = document.querySelector(".bubble-container-2");
 //     let circleEl = document.createElement("span");
 //     let size = Math.random() * 60;
@@ -50,16 +74,14 @@
 //     setTimeout(() => {
 //       circleEl.remove();
 //     }, 4000);
-//   } 
+//  } 
   
 // setInterval(createCircle_2, 50);
-  
 
 var swiper = new Swiper(".main-swiper", {
   direction: "vertical",
   loop: true,
   slidesPerView: 1,
-  autoHeight: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -71,9 +93,11 @@ var swiper = new Swiper(".main-swiper", {
   on:{
     init:function(){
       setSlideHeight(this);
+      mainCounter()
     },
     slideChangeTransitionEnd:function(){
       setSlideHeight(this);
+      mainCounter()
     }
   }
 });
@@ -83,9 +107,45 @@ function setSlideHeight(that){
       var currentSlide = that.activeIndex;
       var newHeight = $(that.slides[currentSlide]).height();
 
-      $('.swiper-wrapper,.swiper-slide').css({ height : newHeight })
+
+
+       $('.swiper-wrapper,.swiper-slide').animate({ 
+        height : newHeight
+       })
       that.update();
- }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mainCounter() {
+  const couterMainSwiper = document.querySelector('.main__box-counter')
+  const couterMainSwiperSecond = document.querySelector('.main__box-counter-second')
+  const mainSwiperSlide = $('.swiper-slide-active').attr('aria-label')
+  const mainSwiperSlideSecond = $('.swiper-slide-active').attr('aria-label')
+
+  if (mainSwiperSlide.replace(/ .*/,'') === 'NaN') {
+    couterMainSwiper.innerHTML = '1'
+    couterMainSwiperSecond.innerHTML = ''
+    couterMainSwiperSecond.insertAdjacentHTML('beforeend', `1<span>/${mainSwiperSlideSecond.split(" ").pop()}</span>`)
+  } else {
+    couterMainSwiper.innerHTML = mainSwiperSlide.replace(/ .*/,'')
+    couterMainSwiperSecond.innerHTML = ''
+    couterMainSwiperSecond.insertAdjacentHTML('beforeend', `${mainSwiperSlide.replace(/ .*/,'')}<span>/${mainSwiperSlideSecond.split(" ").pop()}</span>`)
+  }
+}
+
 var skroll = new Skroll()
 			.add(".about__img",{
 				animation:"slideInLeft",
@@ -118,7 +178,8 @@ ymaps.ready(function () {
             zoom: 17,
             controls: []
         }, {
-            searchControlProvider: 'yandex#search'
+            searchControlProvider: 'yandex#search',
+            suppressMapOpenBlock: true
         }),
 
         // Создаём макет содержимого.
@@ -322,3 +383,8 @@ var skroll = new Skroll()
 				delay:80,
 				duration:800
 			}).init();
+$('#fancylink').click(function(){
+	$.fancybox.open({
+		src: '#fancyform'
+	});
+});

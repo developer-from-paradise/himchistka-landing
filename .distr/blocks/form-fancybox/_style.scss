@@ -1,28 +1,23 @@
-.form-section {
-    padding: 88px 0px;
-    position: relative;
-    background: linear-gradient(to top, #489DE8,  #6BC5F2, #FEFFFF);
-    z-index: 0;
-    overflow: hidden;
-    .bubble-container-2 {
-        bottom: 0;
-        z-index: 1;
+.form-fancybox {
+    max-width: 570px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 56px;
+
+    @include _480 {
+        padding: 32px 16px;
     }
 
-    .container {
-        z-index: 2;
-        position: relative;
-        max-width: 1512px;
-        padding: 48px 32px;
-        border-radius: 56px;
-        background: #FFF;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    .fancybox-close-small {
+        right: 35px;
+        top: 5px;
 
-      
+        @include _480 {
+            right: 10px;
+        }
+        svg {
+            color: $secondary;
+        }
     }
 
     &__title {
@@ -30,62 +25,40 @@
         font-weight: 700;
         color: $secondary;
         text-align: center;
-        @include _480 {
-            font-size: 24px;
-        }
     }
 
     &__form {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
-        @include _480 {
-            display: flex;
-            flex-direction: column;
-        }
-
-        
-
+        gap: 24px;
+        margin-top: 24px;
         &-input {
             box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
             padding: 10px 24px;
             border-radius: 24px;
+            width: 100%;
             
+        }
 
-            &:not(:nth-child(1)), &:not(:nth-child(4)) {
-                margin-top: 24px;
-            }
+        &-textarea {
+            resize: none;
+            box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+            padding: 10px 24px;
+            border-radius: 24px;
+            width: 100%;
+            height: 180px;
 
-            &:nth-child(1) {
-                grid-area: 1 / 1 / 2 / 2;
-            }
-            &:nth-child(2) {
-                grid-area: 2 / 1 / 3 / 2;
-            }
-            &:nth-child(3) {
-                grid-area: 3 / 1 / 4 / 2;
-            }
-            &:nth-child(4) {
-                grid-area: 1 / 2 / 4 / 3;
-                resize: none;
-                margin-left: 26px;
-                @include _480 {
-                    margin-left: 0;
-                    height: 180px;
-                }
-            }
         }
 
         &-checkboxes {
-            grid-area: 4 / 1 / 5 / 3;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 88px;
             
-   
-
             &-label {
                 position: relative;
                 padding-left: 23px;
@@ -109,15 +82,9 @@
                 }
             }
 
-            @include _480 {
-                margin-top: 24px;
-                justify-content: space-between;
-                gap: 0;
-            }
         }
         
         &-btn {
-            grid-area: 5 / 1 / 6 / 3;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -136,10 +103,6 @@
             background-color: $white;
             box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
 
-            @include _480 {
-                grid-area: 6 / 1 / 7 / 2;
-            }
-            
             &-ico {
                 width: 32px;
                 height: 32px;
@@ -148,6 +111,7 @@
                 border-radius: 50%;
                 z-index: 1;
             }
+ 
         }
     }
 

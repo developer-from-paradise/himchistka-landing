@@ -86,7 +86,7 @@ br {
 
 a:hover,
 a {
-	transition: 0.3s;
+	transition: 0.3s all;
 	text-decoration: none;
 }
 
@@ -161,7 +161,11 @@ input, textarea, button {
 			background: radial-gradient(#fff, transparent);
 			border-radius: 50%;
 		  }
-	  }  
+	  }
+
+	  @include _480 {
+		display: none;
+	  }
 }
   
 

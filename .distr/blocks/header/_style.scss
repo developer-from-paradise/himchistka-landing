@@ -127,14 +127,25 @@
         }
 
         &-link {
-            
+            position: relative;
+            z-index: 10;  
+            transition: 0.3s all;
+            border-left: 1px solid $primary;
+            padding-left: 24px;
+            font-weight: 500;
+                      
+            a:not(.link) {
+                text-wrap: nowrap;
+                display: block;
+                &:hover {
+                    transform: translateY(-10px);
+                }
+            }
+
             &:first-of-type {
                 border: none;
-                position: relative;
                 margin-right: 16px;
-                
-            
-                
+
                 a:not(.link) {
                     &:hover {
                         &::after{
@@ -146,7 +157,7 @@
                         content: '';
                         width: 16px;
                         height: 16px;
-                        background-image: url('../img/alt-bottom.svg');
+                        background-image: url('../img/header/alt-up.png');
                         background-size: contain;
                         position: absolute;
                         top: 3px;
@@ -155,25 +166,14 @@
                     }
                 }
             }
-            transition: 0.3s all;
-            border-left: 1px solid $primary;
-            padding-left: 24px;
-            font-weight: 500;
-
-            a:not(.link) {
-                text-wrap: nowrap;
-
-                &:hover {
-                    transform: translateY(-10px);
-                }
-            }
+            
         }
     }
 
 
     &__contacts {
         &-btn {
-            max-width: 295px;
+            min-width: 271px;
             padding: 8px 8px 8px 24px;
             width: 100%;
             display: flex;
@@ -183,8 +183,19 @@
             align-items: center;
             border-radius: 60px;
             color: #FFF;
-            margin-top: 23px;
             grid-area: 1 / 8 / 2 / 10;
+
+            @include _1280 {
+                grid-area: 1 / 8 / 2 / 9;
+            }
+
+
+            @include _652 {
+                grid-area: 2 / 1 / 3 / 4;
+                width: 100%;
+                margin: 0;
+            }
+
             &-text {
                 display: flex;
                 flex-direction: column;
@@ -197,11 +208,15 @@
                     font-size: 14px;
                 }
             }
-            @include _652 {
-                grid-area: 2 / 1 / 3 / 4;
-                width: 100%;
-                margin: 0;
+
+            &-ico {
+                width: 56px;
+                height: 56px;
+                background-color: $white;
+                border-radius: 50%;
+                padding: 9.33px;
             }
+            
         }
 
 
@@ -216,7 +231,8 @@
         position: relative;
         grid-area: 1 / 10 / 2 / 11;
         cursor: pointer;
-        
+        justify-self: center;
+
         img {
             width: 30px;
             height: 30px;
@@ -242,65 +258,74 @@
         }
     }
 
+
     .dropdown {
+        display: none;
         position: absolute;
+        left: -4vw;
+        top: 18px;
         padding: 49px 20px 49px 32px;
-        width: auto;
-        display: flex;
-        justify-content: center;
-        background-color: $white;
         border-radius: 24px;
-        
-        &__links {
+        background-color: $white;
+        gap: 71px;
+
+        &__tail {
+            display: none;
+            position: absolute;
+            top: -16px;
+            left: 120px;
+        }
+
+        &__main {
             display: flex;
             flex-direction: column;
-            gap: 34px;
+            gap: 17px;
             font-size: 16px;
-            padding: 0;
-            padding-right: 70px;
-            border-right: 1px solid #FAFAFE; 
-            a {
+            border-right: 1px solid #FAFAFE;
+            padding-right: 48px;
+    
+            &-link {
                 width: 100%;
+                border-bottom: 1px solid #FAFAFE;
+                padding-bottom: 17px;
+                position: relative;
+                width: 224px;
+                a {
+                    display: block;
+                    width: 100%;
+    
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 10%;
+                        right: 0;
+                        width: 16px;
+                        height: 16px;
+                        background-image: url(../img/header/alt-right.png);
+                        background-size: contain;
+                        transition: 0.3s all;
+                    }
+    
+                    &:hover::after {
+                        transform: translateX(10px);
+                    }
+                }
             }
 
         }
 
-        &__link {
-            &:first-of-type {
-                .dropdown__sublinks {
-                    display: flex;
-                    position: absolute;
-                    flex-direction: column;
-                    gap: 34px;
-                    font-size: 16px;
-                    padding: 0 70px 0 0;
-                    left: 220px;
-                    top: 0;
-                }
-   
-            }
-            position: relative;
-            border-bottom: 1px solid #FAFAFE; 
-            padding-bottom: 17px;
-            &:hover {
-                &::after {
-                    margin-right: -50px;
-                }
-            }
-            &::after {
-                content: '';
-                width: 16px;
-                height: 16px;
-                background-image: url('../img/alt-bottom.svg');
-                background-size: contain;
-                position: absolute;
-                top: 3px;
-                right: 0;
-                margin-right: -40px;
-                transform: rotate(270deg);
-                transition: 0.3s all;
-            }
+
+
+
+
+        &__extra {
+            display: none;
+            flex-direction: column;
+            gap: 24px;
+            font-size: 16px;
+            padding-right: 70px;
         }
+
+        
     }
-
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +26,8 @@
     {% include 'form/block.php' %}
     {% include 'footer/block.php' %}
     {% include 'rights/block.php' %}
-  {% endblock %}
+    {% include 'form-fancybox/block.php' %}
+    {% endblock %}
 
     
     

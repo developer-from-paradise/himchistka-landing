@@ -126,9 +126,13 @@
 
             
 
-            img {
+            &-ico {
                 width: 32px;
                 height: 32px;
+                padding: 5.33px;
+                background: #004293;
+                border-radius: 50%;
+                z-index: 1;
             }
             @include _768 {
                 max-width: 100%;

@@ -16,7 +16,8 @@ ymaps.ready(function () {
             zoom: 17,
             controls: []
         }, {
-            searchControlProvider: 'yandex#search'
+            searchControlProvider: 'yandex#search',
+            suppressMapOpenBlock: true
         }),
 
         // Создаём макет содержимого.
