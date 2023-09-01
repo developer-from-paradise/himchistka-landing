@@ -17,35 +17,195 @@
                     с 8:00 - 20:00
                 </div>
              </div>
-             
-            <nav class="header__navbar animate__animated">
+    
+             <nav class="header__navbar">
+                <ul class="header__navbar-links">
+                    <li class="header__navbar-link dropdown">
+                        <div class="dropdown-btn-text">Услуги</div>  
+                        <div class="dropdown-skin">
+                            <div class="dropdown-skin-first">
+                                <div class="dropdown-skin-item">
+                                    <div class="dropdown-skin-item-text">Одежда</div>
+                                    <div class="dropdown-skin-item-list">
+                                        <a href="#">Деловая-1</a>
+                                        <a href="#">Повседневная</a>
+                                        <a href="#">Торжественная</a>
+                                        <a href="#">Верхняя</a>
+                                        <a href="#">Детская</a>
+                                        <a href="#">Домашняя</a>
+                                        <a href="#">Спортивная</a>
+                                        <a href="#">Форменная</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-skin-item">
+                                    <div class="dropdown-skin-item-text">Аксессуары</div>
+                                    <div class="dropdown-skin-item-list">
+                                        <a href="#">Деловая-2</a>
+                                        <a href="#">Повседневная</a>
+                                        <a href="#">Торжественная</a>
+                                        <a href="#">Верхняя</a>
+                                        <a href="#">Детская</a>
+                                        <a href="#">Домашняя</a>
+                                        <a href="#">Спортивная</a>
+                                        <a href="#">Форменная</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-skin-item">
+                                    <div class="dropdown-skin-item-text">Домашний интерьер</div>
+                                    <div class="dropdown-skin-item-list">
+                                        <a href="#">Деловая-3</a>
+                                        <a href="#">Повседневная</a>
+                                        <a href="#">Торжественная</a>
+                                        <a href="#">Верхняя</a>
+                                        <a href="#">Детская</a>
+                                        <a href="#">Домашняя</a>
+                                        <a href="#">Спортивная</a>
+                                        <a href="#">Форменная</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-skin-item">
+                                    <div class="dropdown-skin-item-text">Обувь</div>
+                                    <div class="dropdown-skin-item-list">
+                                        <a href="#">Деловая-4</a>
+                                        <a href="#">Повседневная</a>
+                                        <a href="#">Торжественная</a>
+                                        <a href="#">Верхняя</a>
+                                        <a href="#">Детская</a>
+                                        <a href="#">Домашняя</a>
+                                        <a href="#">Спортивная</a>
+                                        <a href="#">Форменная</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-skin-item">
+                                    <div class="dropdown-skin-item-text">Особые услуги</div>
+                                    <div class="dropdown-skin-item-list">
+                                        <a href="#">Деловая-5</a>
+                                        <a href="#">Повседневная</a>
+                                        <a href="#">Торжественная</a>
+                                        <a href="#">Верхняя</a>
+                                        <a href="#">Детская</a>
+                                        <a href="#">Домашняя</a>
+                                        <a href="#">Спортивная</a>
+                                        <a href="#">Форменная</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-skin-second"></div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-link"><a href="#">Акции</a></li>
+                    <li class="header__navbar-link"><a href="#">Магазин</a></li>
+                    <li class="header__navbar-link"><a href="#">О компании</a></li>
+                    <li class="header__navbar-link"><a href="#">Контакты</a></li>
+                </ul>
+                
+           </nav>
+
+
+             <!-- <nav class="header__navbar">
+                <ul class="header__navbar-links">
+                    <li class="header__navbar-link dropdown">
+                        <div class="dropdown-btn dropdown-btn-first">
+                            <div class="dropdown-btn-text">Услуги</div>  
+                            <div class="dropdown-list-first">
+                                <div class="dropdown-list">
+                                    <div class="dropdown-btn dropdown-btn-second">
+                                        <div class="dropdown-btn-text">Одежда</div>
+                                        <div class="dropdown-list">
+                                            <a href="#">первый</a>
+                                            <a href="#">первый-первый</a>
+                                            <a href="#">Торжественная</a>
+                                            <a href="#">Верхняя</a>
+                                            <a href="#">Детская</a>
+                                            <a href="#">Домашняя</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-btn dropdown-btn-second">
+                                        <div class="dropdown-btn-text">Аксессуары</div>
+                                        <div class="dropdown-list">
+                                            <a href="#">второй</a>
+                                            <a href="#">второй-первый</a>
+                                            <a href="#">Торжественная</a>
+                                            <a href="#">Верхняя</a>
+                                            <a href="#">Детская</a>
+                                            <a href="#">Домашняя</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-btn dropdown-btn-second">
+                                        <div class="dropdown-btn-text">Домашний интерьер</div>
+                                        <div class="dropdown-list">
+                                            <a href="#">третий</a>
+                                            <a href="#">третий-первый</a>
+                                            <a href="#">Торжественная</a>
+                                            <a href="#">Верхняя</a>
+                                            <a href="#">Детская</a>
+                                            <a href="#">Домашняя</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-btn dropdown-btn-second">
+                                        <div class="dropdown-btn-text">Обувь</div>
+                                        <div class="dropdown-list">
+                                            <a href="#">Четвертый</a>
+                                            <a href="#">четвертый-первый</a>
+                                            <a href="#">Торжественная</a>
+                                            <a href="#">Верхняя</a>
+                                            <a href="#">Детская</a>
+                                            <a href="#">Домашняя</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="dropdown-list-content">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="header__navbar-link"><a href="#">Акции</a></li>
+                    <li class="header__navbar-link"><a href="#">Магазин</a></li>
+                    <li class="header__navbar-link"><a href="#">О компании</a></li>
+                    <li class="header__navbar-link"><a href="#">Контакты</a></li>
+                </ul>
+                
+           </nav> -->
+
+
+
+
+
+
+
+            <!-- <nav class="header__navbar animate__animated">
                 <ul class="header__navbar-links">
                 <li class="header__navbar-link dropdown-btn">
-                    <a href="">Услуги</a>
+                    <a href="#" class="dropdown-btn-link">Услуги</a>
                     <div class="dropdown">
                     <svg class="dropdown__tail" xmlns="http://www.w3.org/2000/svg" width="39" height="19" viewBox="0 0 39 19" fill="none">
                         <path d="M19.5 0L0 19H39L19.5 0Z" fill="white"/>
                     </svg>
 
                         <ul class="dropdown__main">
-                            <li class="dropdown__main-link"><a href="#" class="link link-cloth">Одежда</a></li>
+                            <li class="dropdown__main-link">
+                                <a href="#" class="link link-cloth">Одежда</a>
+                                <ul class="dropdown__extra extra-cloth">
+                                    <li class="dropdown__extra-link"><a href="#" class="link">Деловая</a></li>
+                                    <li class="dropdown__extra-link"><a href="#" class="link">Повседневная</a></li>
+                                    <li class="dropdown__extra-link"><a href="#" class="link">Торжественная</a></li>
+                                    <li class="dropdown__extra-link"><a href="#" class="link">Верхняя</a></li>
+                                    <li class="dropdown__extra-link"><a href="#" class="link">Детская</a></li>
+                                    <li class="dropdown__extra-link"><a href="#" class="link">Домашняя</a></li>
+                                    <li class="dropdown__extra-link"><a href="#" class="link">Спортивная</a></li>
+                                    <li class="dropdown__extra-link"><a href="#" class="link">Форменная</a></li>
+                                </ul>
+                            </li>
                             <li class="dropdown__main-link"><a href="#" class="link link-acce">Аксессуары</a></li>
                             <li class="dropdown__main-link"><a href="#" class="link link-house">Домашний интерьер</a></li>
                             <li class="dropdown__main-link"><a href="#" class="link link-shoes">Обувь</a></li>
                             <li class="dropdown__main-link"><a href="#" class="link link-others">Особые услуги</a></li>
-                        </ul>
+                        </ul> -->
 
-                        <ul class="dropdown__extra extra-cloth">
-                            <li class="dropdown__extra-link"><a href="#" class="link">Деловая</a></li>
-                            <li class="dropdown__extra-link"><a href="#" class="link">Повседневная</a></li>
-                            <li class="dropdown__extra-link"><a href="#" class="link">Торжественная</a></li>
-                            <li class="dropdown__extra-link"><a href="#" class="link">Верхняя</a></li>
-                            <li class="dropdown__extra-link"><a href="#" class="link">Детская</a></li>
-                            <li class="dropdown__extra-link"><a href="#" class="link">Домашняя</a></li>
-                            <li class="dropdown__extra-link"><a href="#" class="link">Спортивная</a></li>
-                            <li class="dropdown__extra-link"><a href="#" class="link">Форменная</a></li>
-                        </ul>
-
+                        
+<!-- 
                         <ul class="dropdown__extra extra-acce">
                             <li class="dropdown__extra-link"><a href="#" class="link">Деловая</a></li>
                             <li class="dropdown__extra-link"><a href="#" class="link">Повседневная</a></li>
@@ -66,11 +226,11 @@
                             <li class="dropdown__extra-link"><a href="#" class="link">Домашняя</a></li>
                             <li class="dropdown__extra-link"><a href="#" class="link">Спортивная</a></li>
                             <li class="dropdown__extra-link"><a href="#" class="link">Форменная</a></li>
-                        </ul>
+                        </ul> -->
 
 
 
-                    </div>
+                    <!-- </div>
                         
                 </li>
 
@@ -80,7 +240,7 @@
                    <li class="header__navbar-link"><a href="">Контакты</a></li>
                 </ul>
                 
-            </nav>
+            </nav> -->
 
 
            <a href="#fancyform" data-fancybox class="header__contacts-btn btn-w">
