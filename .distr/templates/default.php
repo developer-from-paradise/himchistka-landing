@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=6be3bf7a-5635-45f5-8d7f-ee0ef3913e00&lang=ru_RU" type="text/javascript"></script>
 </head>
@@ -16,7 +17,11 @@
 <body>
 
   {% block blocks %}
-    <div class="wrapper">
+
+  
+
+<div class="wrapper">
+
     {% include 'header/block.php' %}
     {% include 'main/block.php' %}
     {% include 'about/block.php' %}
@@ -27,7 +32,11 @@
     {% include 'footer/block.php' %}
     {% include 'rights/block.php' %}
     {% include 'form-fancybox/block.php' %}
-    </div>
+
+
+</div>
+
+
     {% endblock %}
 
     
