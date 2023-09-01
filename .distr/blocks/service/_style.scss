@@ -3,8 +3,15 @@
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
     padding: 136px 172px 183px;
     position: relative;
-    background: url("../img/service/field-service_bg.png") right 35px / 656px no-repeat;
-    overflow: hidden;
+
+    @include _1280 {
+        padding: 136px 140px 40%;
+    }
+    
+    @include _768 {
+        padding: 30px 0 40%;
+    }
+
     &__container{
         display: flex;
     }
@@ -12,6 +19,11 @@
         display: flex;
         flex-direction: column;
         gap: 45px;
+        
+        @include _768 {
+            max-width: 488px;
+            margin: 0 auto;
+        }
 
         &-titles{
             &-subtitle{
@@ -38,12 +50,26 @@
             font-size: 16px;
             font-weight: 300;
             line-height: 24px 
+
+            
         }
+
+        @include _768 {
+            &-text {
+                margin-left: 0;
+            }
+        }
+
         &-buttons{
             display: flex;
             gap: 24px;
             align-items: center;
-            &-btn1{
+
+            @include _768 {
+                flex-direction: column;
+            }
+
+            &-btn1 {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -59,6 +85,10 @@
                 color: $primary;
                 background-color: $white;
                 box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+
+                @include _768 {
+                    max-width: 100%;
+                }
 
                 &-ico {
                     width: 32px;
@@ -85,6 +115,11 @@
                 color: $primary;
                 background-color: $white;
                 box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+                
+                @include _768 {
+                    max-width: 100%;
+                    order: -1;
+                }
             }
         }
     
@@ -94,9 +129,43 @@
 
     &__img {
         position: absolute;
-        right: 0;
+        left: 50%;
         bottom: 0;
-        background: url('../img/service/car.png');
+        width: 1341px;
+        
+        @include _1440 {
+            left: 62%;
+        }
+
+        @include _1280 {
+            left: 6vw;
+            width: 85%;
+        }
+    
+
+        &-circle {
+            width: 787px;
+            left: 74%;
+            position: absolute;
+            bottom: -30%;
+            transition: .8s;
+
+            @include _1440 {
+                left: 90%;
+            }
+            
+            @include _1280 {
+                bottom: -20%;
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: 45%;
+            }
+
+            @include _652 {
+                width: 60%;
+                bottom: -20%;
+            }
+        }
     }
     
 

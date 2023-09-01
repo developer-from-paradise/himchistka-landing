@@ -402,7 +402,7 @@ var skroll = new Skroll()
 				delay:80,
 				duration:800
 			})
-            .add(".service__img",{
+      .add(".service__img",{
 				animation:"slideInRight",
 				delay:80,
 				duration:800
