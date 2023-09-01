@@ -18,7 +18,7 @@
                 </div>
              </div>
              
-            <nav class="header__navbar">
+            <nav class="header__navbar animate__animated">
                 <ul class="header__navbar-links">
                 <li class="header__navbar-link dropdown-btn">
                     <a href="">Услуги</a>
@@ -80,7 +80,7 @@
                    <li class="header__navbar-link"><a href="">Контакты</a></li>
                 </ul>
                 
-           </nav>
+            </nav>
 
 
            <a href="tel:777777" class="header__contacts-btn btn-w">

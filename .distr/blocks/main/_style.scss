@@ -5,7 +5,14 @@
   background: linear-gradient(to top, #489DE8,  #6BC5F2, #FEFFFF);
   position: relative;
   overflow: hidden;
-  @include _768 {
+  
+  @include _1280 {
+    padding: 15px 0px 100px;
+  }
+
+
+  @include _992 {
+    margin-top: 200px;
     padding: 72px 20px 48px;
   }
   .container {
@@ -46,37 +53,7 @@
     gap: 24px;
     width: fit-content;
     padding: 8px 8px 8px 24px;
-    // line-height: 150%;
-    // overflow: hidden;
     color: $primary;
-    // &:before {
-    //   content: '';
-    //   position: absolute;
-    //   top: 8px;
-    //   right: 8px;
-    //   width: 32px;
-    //   height: 32px;
-    //   border-radius: 50%;
-    //   background: #004293;
-    //   transition: .3s;
-    // }
-
-    // &:hover {
-    //   &:before {
-    //     top: 0px;
-    //     right: 0px;
-    //     width: 100%;
-    //     height: 100%;
-    //     border-radius: 0%;
-    //   }
-    //   .main-btn__text {
-    //     color: #fff;
-    //   }
-    // }
-    
-    // &__text {
-    //   z-index: 1;
-    // }
 
     &__ico {
       width: 32px;

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=6be3bf7a-5635-45f5-8d7f-ee0ef3913e00&lang=ru_RU" type="text/javascript"></script>
 </head>
@@ -16,7 +17,7 @@
 <body>
 
   
-
+<div class="wrapper">
     <header class="header">
     <div class="container">
         <div class="header__box">
@@ -37,7 +38,7 @@
                 </div>
              </div>
              
-            <nav class="header__navbar">
+            <nav class="header__navbar animate__animated">
                 <ul class="header__navbar-links">
                 <li class="header__navbar-link dropdown-btn">
                     <a href="">Услуги</a>
@@ -99,7 +100,7 @@
                    <li class="header__navbar-link"><a href="">Контакты</a></li>
                 </ul>
                 
-           </nav>
+            </nav>
 
 
            <a href="tel:777777" class="header__contacts-btn btn-w">
@@ -492,6 +493,8 @@
         </div>
 
 </div>
+</div>
+
     
 
     

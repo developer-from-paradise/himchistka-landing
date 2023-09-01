@@ -27,8 +27,23 @@ $('.link-house').hover(function(){
 $('.header__burger').click(function(){
     if(!$(this).hasClass('active-burger')) {
         $(this).addClass('active-burger');
+        $('.header__navbar').addClass('mobile-navbar');
+        $('.header__navbar').addClass('animate__slideInLeft');
+        $('.header__brand-logo').addClass('active-logo');
+
+        setTimeout(function(){
+            $('.header__navbar').removeClass('animate__slideInLeft');
+        }, 300);
     } else {
         $(this).removeClass('active-burger');
+        $('.header__navbar').addClass('animate__slideOutLeft');
+        setTimeout(function(){
+            $('.header__navbar').removeClass('animate__slideOutLeft');
+            $('.header__navbar').removeClass('mobile-navbar');
+            $('.header__brand-logo').removeClass('active-logo');
+        }, 300);
+        
+        
     }
 });
 // function createCircle_1() {
