@@ -6,7 +6,23 @@
         </div>
 
         <div class="footer__links">
-
+            <div class="footer__links-first">
+                <div class="footer-droplist">Услуги <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.0117 4.89957C15.2435 5.17912 15.2122 5.59998 14.9417 5.8396L8.92019 11.1729C8.67858 11.3869 8.32207 11.3869 8.08046 11.1729L2.05897 5.8396C1.78843 5.59998 1.7571 5.17911 1.98899 4.89956C2.22087 4.62001 2.62816 4.58764 2.89869 4.82725L8.50039 9.66674L14.102 4.82726C14.3725 4.58764 14.7798 4.62002 15.0117 4.89957Z" fill="#1C274C"/></svg>
+                </div>
+                <div class="footer-droplist-list">
+                    <a href="#" class="active">Одежда</a>
+                    <a href="#">Аксессуары</a>
+                    <a href="#">Домашний интерьер</a>
+                    <a href="#">Обувь</a>
+                    <a href="#">Особые услуги</a>
+                </div>
+            </div>
+            <div class="footer__links-second">
+                <a href="#">Акции</a>
+                <a href="#">Магазин</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+            </div>
         </div>
 
         <div class="footer__contacts">

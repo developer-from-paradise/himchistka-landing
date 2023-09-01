@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=6be3bf7a-5635-45f5-8d7f-ee0ef3913e00&lang=ru_RU" type="text/javascript"></script>
 </head>
@@ -16,7 +17,7 @@
 <body>
 
   
-    <div class="wrapper">
+<div class="wrapper">
     <header class="header">
     <div class="container">
         <div class="header__box">
@@ -37,7 +38,7 @@
                 </div>
              </div>
              
-            <nav class="header__navbar">
+            <nav class="header__navbar animate__animated">
                 <ul class="header__navbar-links">
                 <li class="header__navbar-link dropdown-btn">
                     <a href="">Услуги</a>
@@ -99,7 +100,7 @@
                    <li class="header__navbar-link"><a href="">Контакты</a></li>
                 </ul>
                 
-           </nav>
+            </nav>
 
 
            <a href="tel:777777" class="header__contacts-btn btn-w">
@@ -426,7 +427,23 @@
         </div>
 
         <div class="footer__links">
-
+            <div class="footer__links-first">
+                <div class="footer-droplist">Услуги <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.0117 4.89957C15.2435 5.17912 15.2122 5.59998 14.9417 5.8396L8.92019 11.1729C8.67858 11.3869 8.32207 11.3869 8.08046 11.1729L2.05897 5.8396C1.78843 5.59998 1.7571 5.17911 1.98899 4.89956C2.22087 4.62001 2.62816 4.58764 2.89869 4.82725L8.50039 9.66674L14.102 4.82726C14.3725 4.58764 14.7798 4.62002 15.0117 4.89957Z" fill="#1C274C"/></svg>
+                </div>
+                <div class="footer-droplist-list">
+                    <a href="#" class="active">Одежда</a>
+                    <a href="#">Аксессуары</a>
+                    <a href="#">Домашний интерьер</a>
+                    <a href="#">Обувь</a>
+                    <a href="#">Особые услуги</a>
+                </div>
+            </div>
+            <div class="footer__links-second">
+                <a href="#">Акции</a>
+                <a href="#">Магазин</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+            </div>
         </div>
 
         <div class="footer__contacts">
@@ -492,7 +509,8 @@
         </div>
 
 </div>
-    </div>
+</div>
+
     
 
     
