@@ -16,7 +16,7 @@
 <body>
 
   {% block blocks %}
-
+    <div class="wrapper">
     {% include 'header/block.php' %}
     {% include 'main/block.php' %}
     {% include 'about/block.php' %}
@@ -27,6 +27,7 @@
     {% include 'footer/block.php' %}
     {% include 'rights/block.php' %}
     {% include 'form-fancybox/block.php' %}
+    </div>
     {% endblock %}
 
     

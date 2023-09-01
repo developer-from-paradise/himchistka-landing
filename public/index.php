@@ -16,7 +16,7 @@
 <body>
 
   
-
+    <div class="wrapper">
     <header class="header">
     <div class="container">
         <div class="header__box">
@@ -257,8 +257,8 @@
 
 
         
+        <img src="./img/service/field-service_bg.png" class="service__img-circle">
         <img src="./img/service/car.png" class="service__img">
-
 
         
         
@@ -492,6 +492,7 @@
         </div>
 
 </div>
+    </div>
     
 
     

@@ -1,10 +1,11 @@
 .contacts {
+    z-index: 1;
     padding: 160px 0px;
-    background-color: #FAFAFE;
-    background-image: url(../img/common/round.png), url(../img/common/round-xl.png);
+    background-color: #fafafef7;
+    background-image:url(../img/common/round-xl.png);
     background-repeat: no-repeat, no-repeat;
-    background-size: 783px, 367px;
-    background-position: calc(100% - -146px) calc(0% - 518px), calc(0% + -270px) calc(0% + 169px);
+    background-size:367px;
+    background-position: calc(0% + -270px) calc(0% + 169px);
 
     @include _768 {
         padding: 32px 0;
