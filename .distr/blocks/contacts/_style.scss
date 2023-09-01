@@ -14,10 +14,10 @@
     &__title {
         font-size: 32px;
         font-weight: 700;
-        color: $primary;
+        color: var(--uni-text-color);
         text-align: center;
         .emphasized {
-            color: $secondary;
+            color: var(--uni-text-color-2);
         }
     }
 
@@ -27,7 +27,7 @@
         font-size: 16px;
         font-weight: 300;
         margin-top: 24px;
-        color: $primary;
+        color: var(--uni-text-color);
         max-width: 616px;
     }
 
@@ -80,19 +80,19 @@
         }
 
         &::-webkit-scrollbar {
-            background: $secondary;
+            background: var(--uni-text-color-2);
             border-radius: 8px;
             width: 8px;
         }
 
         &::-webkit-scrollbar-thumb {
-            background: $secondary;
+            background: var(--uni-text-color-2);
             border-radius: 8px;
         }
 
         &::-webkit-scrollbar-track {
             border-radius: 8px;
-            background: $white;
+            background: #FFFFFF;
         }
 
         #show_more_box {
@@ -112,7 +112,7 @@
             }
             &-type {
                 font-size: 18px;
-                color: $secondary;
+                color: var(--uni-text-color-2);
                 font-weight: 500;
                 padding-right: 24px;
                 width: 150px;
@@ -120,14 +120,14 @@
             }
 
             &-data {
-                border-left: 1px solid $secondary;
+                border-left: 1px solid var(--uni-text-color-2);
                 padding-left: 24px; 
                 display: flex;
                 flex-direction: column;
                 font-size: 16px;
                 gap: 24px;
                 @include _768 {
-                    border-bottom: 1px solid $secondary;
+                    border-bottom: 1px solid var(--uni-text-color-2);
                     gap: 8px;
                     padding-bottom: 16px;
                     border-left: none;
@@ -143,9 +143,9 @@
 
                 &-date {
                     font-weight: 300;
-                    color: $secondary;
+                    color: var(--uni-text-color-2);
                     .emphasized {
-                        color: $primary;
+                        color: var(--uni-text-color);
                     }
                 }
             }
@@ -156,7 +156,7 @@
         display: none;
         font-size: 16px;
         line-height: 24px;
-        color: $secondary;
+        color: var(--uni-text-color-2);
         position: relative;
         margin: 0 auto;
         padding-right: 12px;
@@ -205,7 +205,7 @@
                 font-size: 18px;
                 font-weight: 500;
                 margin-bottom: 16px;
-                color: $secondary;
+                color: var(--uni-text-color-2);
             }
 
             &-phone {
@@ -218,7 +218,7 @@
             }
             &-schedule {
                 .emphasized {
-                    color: $secondary;
+                    color: var(--uni-text-color-2);
                 }
             }
 

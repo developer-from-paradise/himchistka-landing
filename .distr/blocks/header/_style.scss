@@ -6,7 +6,7 @@
         left: 0;
         z-index: 14;
         width: 100%;
-        background: $white;
+        background: #FFFFFF;
     }
 
     &__box {
@@ -16,7 +16,7 @@
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         align-items: center;
-        color: $primary;
+        color: var(--uni-text-color);
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
         
@@ -39,7 +39,7 @@
         display: none;
         width: 56px;
         height: 56px;
-        background-color: $secondary;
+        background-color: var(--uni-text-color-2);
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -54,14 +54,14 @@
         .line {
             width: 100%;
             height: 3.5px;
-            background-color: $white;
+            background-color: #FFFFFF;
             border-radius: 2px;
             transition: 0.3s all;
         }
         &:hover {
-            background-color: $white;
+            background-color: #FFFFFF;
             .line {
-                background-color: $primary;
+                background-color: var(--uni-text-color);
             }
         }
 
@@ -70,6 +70,12 @@
         }
         @include _652 {
             margin-right: 0;
+        }
+
+        @include _480 {
+            width: 40px;
+            height: 40px;
+            padding: 9.46px;
         }
     }
 
@@ -113,6 +119,11 @@
             min-width: 76px;
             min-height: 61px;
             z-index: 13;
+
+            @include _480 {
+                width: 76px;
+                height: 61px;
+            }
         }
     }
 
@@ -159,7 +170,7 @@
             position: relative;
             z-index: 10;  
             transition: 0.3s all;
-            border-left: 1px solid $primary;
+            border-left: 1px solid var(--uni-text-color);
             padding-left: 24px;
             font-weight: 500;
                       
@@ -168,6 +179,7 @@
                 display: block;
                 &:hover {
                     transform: translateY(-10px);
+                    padding-bottom: 10px;
                 }
             }
 
@@ -207,7 +219,7 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            background: $secondary;
+            background: var(--uni-text-color-2);
             box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
             align-items: center;
             border-radius: 60px;
@@ -226,6 +238,7 @@
                 margin-top: 8px;
             }
 
+
             &-text {
                 display: flex;
                 flex-direction: column;
@@ -242,7 +255,7 @@
             &-ico {
                 width: 56px;
                 height: 56px;
-                background-color: $white;
+                background-color: #FFFFFF;
                 border-radius: 50%;
                 padding: 9.33px;
             }
@@ -256,7 +269,7 @@
     &__cart-btn {
         width: 72px;
         padding: 20px;
-        background-color: $secondary;
+        background-color: var(--uni-text-color-2);
         border-radius: 50%;
         position: relative;
         grid-area: 1 / 10 / 2 / 11;
@@ -274,7 +287,7 @@
             width: 36px;
             height: 36px;
             position: absolute;
-            background-color: $white;
+            background-color: #FFFFFF;
             opacity: 90%;
             display: flex;
             justify-content: center;
@@ -287,6 +300,23 @@
         @include _652 {
             grid-area: 1 / 3 / 2 / 4;
         }
+
+        @include _480 {
+            width: 40px;
+            height: 40px;
+            padding: 6.46px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            &::after {
+                top: -10px;
+                right: -10px;
+                width: 24px;
+                height: 24px;
+            }
+        }
     }
 
 
@@ -297,7 +327,7 @@
         top: 18px;
         padding: 49px 20px 49px 32px;
         border-radius: 24px;
-        background-color: $white;
+        background-color: #FFFFFF;
         gap: 71px;
 
         &__tail {
@@ -367,7 +397,7 @@
 
 .mobile-navbar {
     display: flex;
-    background: $white;
+    background: #FFFFFF;
     transition: left 0.3s all ease 0s;
     position: fixed;
     top: 0;
@@ -395,7 +425,7 @@
             width: 100%;
             margin: 0 auto;
             border-left: none;
-            border-bottom: 1px solid $secondary;
+            border-bottom: 1px solid var(--uni-text-color-2);
             padding: 17px 0;
             width: calc(-17% + 31vw);
 

@@ -5,3 +5,4 @@
 //=require contacts/script.js
 //=require service/script.js
 //=require form-fancybox/script.js
+//=require footer/script.js

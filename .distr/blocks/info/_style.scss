@@ -27,7 +27,7 @@
         min-height: 140px;
         height: 502px;
         width: 51vw;
-        color: #004293;
+        color: var(--uni-text-color-2);
         filter: invert(100%);
 
         @include _1740 {

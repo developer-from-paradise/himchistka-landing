@@ -21,31 +21,31 @@
     }
   }
   &__title {
-    color: #004293;
+    color: var(--uni-text-color-2);
     font-feature-settings: 'clig' off, 'liga' off;
     font-size: 42px;
     font-weight: 700;
     line-height: 100%;
     
-    @media(max-width: 1200px) {
+    @include _1280 {
       font-size: 32px;
     }
 
-    @media(max-width: 768px) {
+    @include _768 {
       font-size: 24px;
     }
   }
 
   &__text {
     height: fit-content;
-    @media(max-width: 1200px) {
+    @include _1280 {
       font-size: 14px;
     }
   }
 
   &-btn {
     border-radius: 60px;
-    background: $white;
+    background: #FFFFFF;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
     position: relative;
     display: flex;
@@ -53,13 +53,13 @@
     gap: 24px;
     width: fit-content;
     padding: 8px 8px 8px 24px;
-    color: $primary;
+    color: var(--uni-text-color);
 
     &__ico {
       width: 32px;
       height: 32px;
       padding: 5.33px;
-      background: #004293;
+      background: var(--uni-text-color-2);
       border-radius: 50%;
       z-index: 1;
     }
@@ -77,16 +77,16 @@
     position: relative;
     height: fit-content;
 
-    @media(max-width: 1480px) {
+    @include _1440{
       background-image:url('../img/main/main-circle-decore.png');
       background-position: right -104px bottom 50%;
     }
 
-    @media(max-width: 1200px) {
+    @include _1280 {
       padding: 56px 120px;
     }
 
-    @media(max-width: 768px) {
+    @include _768 {
       border-radius: 24px;
       padding: 24px;
       background: #F8FBFF;
@@ -108,14 +108,14 @@
       margin-top: 10px;
 
       &-second {
-        color:#004293;
+        color:var(--uni-text-color-2);
         font-feature-settings: 'clig' off, 'liga' off;
         font-size: 20px;
         font-weight: 300;
         line-height: 24px;
         display: none;
 
-        @media(max-width: 768px) {
+        @include _768 {
           display: block;
         }
 
@@ -132,11 +132,11 @@
       gap: 60px;
       max-width: 536px;
 
-      @media(max-width: 1530px) {
+      @include _1740 {
         max-width: 440px;
       }
 
-      @media(max-width: 1200px) {
+      @include _1280 {
         max-width: 360px;
         gap: 32px;
       }
@@ -152,13 +152,13 @@
       height: 100%;
 
       
-      @media(max-width: 1400px) {
+      @include _1440 {
         max-height: 348px;
         width: 50%;
         left: 68%;
       }
 
-      @media(max-width: 768px) {
+      @include _768 {
         display: none;
       }
 
@@ -175,7 +175,7 @@
 
   .swiper {
 
-    @media(max-width: 768px) {
+    @include _768 {
       padding: 0 8px;
     }
 
@@ -198,7 +198,7 @@
         align-items: center;
         gap: 24px;
 
-        @media(max-width: 768px) {
+        @include _768 {
           width: calc(100% + 20px);
           left: 0;
           background: unset;
@@ -221,7 +221,7 @@
       left: unset;
       right: unset;
 
-      @media(max-width: 768px) {
+      @include _768 {
         display: none;
       }
 
@@ -243,8 +243,7 @@
         }
 
         &-active {
-          background: #004293;
-
+          background: var(--uni-text-color-2);
           &:before {
             width: 16px;
             height: 16px;
@@ -266,10 +265,10 @@
       width: 32px;
       height: 32px;
       padding: 5.33px;
-      background: #004293;
+      background: var(--uni-text-color-2);
       border-radius: 50%;
       
-      @media(max-width: 768px) {
+      @include _768 {
         transform: rotate(0deg);
       }
 

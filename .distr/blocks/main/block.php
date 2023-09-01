@@ -29,7 +29,7 @@
             <div class="swiper-slide main__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut&nbsp;molestiae sint dolorem et&nbsp;quidem cumque voluptatum quae, fugiat hic repudiandae, ad&nbsp;esse eum praesentium doloribus, ea&nbsp;optio minus nulla?</div>
           </div>
         </div>
-        <a href="#fancyform" class="main-btn btn-b" id="fancylink">
+        <a href="#fancyform" data-fancybox class="main-btn btn-b">
           <div class="main-btn__text">Вызвать курьера</div>
 
           <svg class="main-btn__ico" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">

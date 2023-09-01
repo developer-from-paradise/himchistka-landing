@@ -23,12 +23,7 @@
 <div class="wrapper">
 
     {% include 'header/block.php' %}
-    {% include 'main/block.php' %}
-    {% include 'about/block.php' %}
-    {% include 'info/block.php' %}
-    {% include 'service/block.php' %}
-    {% include 'contacts/block.php' %}
-    {% include 'form/block.php' %}
+    {% include 'inner/block.php' %}
     {% include 'footer/block.php' %}
     {% include 'rights/block.php' %}
     {% include 'form-fancybox/block.php' %}

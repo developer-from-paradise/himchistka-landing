@@ -1,5 +1,5 @@
 .footer {
-    background: $white;
+    background: #FFFFFF;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15); 
 
     .container {
@@ -7,9 +7,15 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        background: $white;
+        background: #FFFFFF;
         padding-top: 40px;
         padding-bottom: 40px;
+        gap: 109px 56px;
+        
+        @include _768 {
+            flex-direction: column;
+            gap: 24px;
+        }
     }
 
     &__contacts {
@@ -17,9 +23,18 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        
+
+        @include _1280 {
+            margin: 0 auto;
+        }
+
+        @include _768 {
+            width: 100%;
+            align-items: center;
+        }
+
         &-phone {
-            color: $secondary;
+            color: var(--uni-text-color-2);
             font-weight: 500;
             font-size: 24px;
             letter-spacing: 2px;
@@ -29,6 +44,10 @@
             width: 100%;
             font-size: 16px;
             font-weight: 300;
+
+            @include _768 {
+                width: fit-content;
+            }
         }
 
         &-btn {
@@ -37,13 +56,17 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            background: $secondary;
+            background: var(--uni-text-color-2);
             box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
             align-items: center;
             border-radius: 60px;
             color: #FFF;
             margin-top: 23px;
             gap: 47px;
+
+            @include _768 {
+                max-width: 100%;
+            }
 
             &-text {
                 display: flex;
@@ -61,12 +84,115 @@
             &-ico {
                 width: 40px;
                 height: 40px;
-                background-color: $white;
+                background-color: #FFFFFF;
                 border-radius: 50%;
                 padding: 6.67px;
             }
 
             
+        }
+    }
+
+    &__links {
+        display: flex;
+        gap: 77px;
+
+        @include _1280 {
+            margin-left: auto;
+        }
+
+        @include _768 {
+            flex-direction: column;
+            gap: 16px;
+            margin: unset;
+        }
+
+        a {
+            width: fit-content;
+            color: var(--uni-text-color);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: normal;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+
+        &-first, &-second {
+            width: 160px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &-first {
+            @include _768 {
+                gap: 0;
+            }
+        }
+    }
+
+    &-droplist {
+        width: fit-content;
+        color: var(--uni-text-color);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        @include _768 {
+            &.active {
+                color: var(--uni-text-color-2);
+            }
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+
+        svg {
+            margin-left: 8px;
+            display: none;
+
+            @include _768 {
+                display: block;
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            
+            @include _768 {
+                margin-top: 0px;
+                overflow: hidden;
+                max-height: 0px;
+                transition: .3s;
+                width: 140px;
+                transform: translate(-25%, 0);
+
+                &.active {
+                    margin-top: 16px;
+                    max-height: 600px;
+                }
+            }
+
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                
+                @include _768 {
+                    &.active {
+                        color: var(--uni-text-color-2);
+                    }
+                }
+            }
         }
     }
 }

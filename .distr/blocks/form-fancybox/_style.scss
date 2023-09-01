@@ -16,14 +16,14 @@
             right: 10px;
         }
         svg {
-            color: $secondary;
+            color: var(--uni-text-color-2);
         }
     }
 
     &__title {
         font-size: 28px;
         font-weight: 700;
-        color: $secondary;
+        color: var(--uni-text-color-2);
         text-align: center;
     }
 
@@ -99,15 +99,15 @@
             text-align: left;
             height: fit-content;
             cursor: pointer;
-            color: $primary;
-            background-color: $white;
+            color: var(--uni-text-color);
+            background-color: #FFFFFF;
             box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
 
             &-ico {
                 width: 32px;
                 height: 32px;
                 padding: 5.33px;
-                background: #004293;
+                background: var(--uni-text-color-2);
                 border-radius: 50%;
                 z-index: 1;
             }

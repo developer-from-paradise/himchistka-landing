@@ -407,8 +407,16 @@ var skroll = new Skroll()
 				delay:80,
 				duration:800
 			}).init();
-$('#fancylink').click(function(){
-	$.fancybox.open({
-		src: '#fancyform'
-	});
-});
+//=require form-fancybox/script.js
+$(function() {
+    function dropDownFooter() {
+      $('.footer-droplist').click(function() {
+        $('.footer-droplist-list').toggleClass('active')
+        $(this).toggleClass('active')
+      })
+      $('.footer-droplist-list a').click(function() {
+        $(this).toggleClass('active')
+      })
+    }
+    dropDownFooter()
+  })

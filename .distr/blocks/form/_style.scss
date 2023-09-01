@@ -4,6 +4,7 @@
     background: linear-gradient(to top, #489DE8,  #6BC5F2, #FEFFFF);
     z-index: 0;
     overflow: hidden;
+    
     .bubble-container-2 {
         bottom: 0;
         z-index: 1;
@@ -28,7 +29,7 @@
     &__title {
         font-size: 28px;
         font-weight: 700;
-        color: $secondary;
+        color: var(--uni-text-color-2);
         text-align: center;
         @include _480 {
             font-size: 24px;
@@ -132,8 +133,8 @@
             text-align: left;
             height: fit-content;
             cursor: pointer;
-            color: $primary;
-            background-color: $white;
+            color: var(--uni-text-color);
+            background-color: #FFFFFF;
             box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
 
             @include _480 {
@@ -144,7 +145,7 @@
                 width: 32px;
                 height: 32px;
                 padding: 5.33px;
-                background: #004293;
+                background: var(--uni-text-color-2);
                 border-radius: 50%;
                 z-index: 1;
             }

@@ -105,11 +105,11 @@ input, textarea, button {
 }
 
 .link:hover {
-	color: $secondary;
+	color: var(--uni-text-color-2);
 }
 
 .text-link {
-	color: $secondary;
+	color: var(--uni-text-color-2);
 	text-decoration: underline;
 }
 
@@ -117,8 +117,8 @@ input, textarea, button {
 	transition: 0.3s all;
 
 	&:hover {
-		background-color: $secondary;
-		color: $white;
+		background-color: var(--uni-text-color-2);
+		color: #FFFFFF;
 	}
 }
 
@@ -126,8 +126,8 @@ input, textarea, button {
 	transition: 0.3s all;
 
 	&:hover {
-		background-color: $white;
-		color: $secondary;
+		background-color: #FFFFFF;
+		color: var(--uni-text-color-2);
 	}
 }
 

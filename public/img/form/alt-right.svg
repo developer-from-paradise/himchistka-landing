@@ -1,6 +1,6 @@
 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_113_1052)">
-<rect x="4" y="2" width="32" height="32" rx="16" fill="#004293" shape-rendering="crispEdges"/>
+<rect x="4" y="2" width="32" height="32" rx="16" fill="var(--uni-text-color-2)" shape-rendering="crispEdges"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8661 9.31819C16.2388 9.00901 16.8 9.05078 17.1195 9.41149L24.2306 17.4402C24.5159 17.7623 24.5159 18.2377 24.2306 18.5598L17.1195 26.5885C16.8 26.9492 16.2388 26.9909 15.8661 26.6818C15.4934 26.3726 15.4502 25.8295 15.7697 25.4688L22.2223 17.9999L15.7697 10.5311C15.4502 10.1704 15.4934 9.62737 15.8661 9.31819Z" fill="white"/>
 </g>
 <defs>

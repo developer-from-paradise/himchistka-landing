@@ -1,0 +1,46 @@
+.inner {
+    height: 500px;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        color: var(--uni-text-color-2);
+
+        @include _652 {
+            font-size: 24px;
+        }
+    }
+
+    &__breadcrumb {
+        display: flex;
+        gap: 21px;
+        font-size: 12px;
+        font-weight: 300;
+        flex-wrap: wrap;
+        
+        li {
+            color: #828282;
+            position: relative;
+
+            &::after {
+                content: '/';
+                position: absolute;
+                top: 0;
+                right: -8px;
+            }
+
+            a {
+                color: var(--uni-text-color-2);
+            }
+        }
+    }
+
+    @include _992 {
+        margin-top: 200px;
+    }
+
+    @include _652 {
+        margin-top: 260px;
+    }
+}

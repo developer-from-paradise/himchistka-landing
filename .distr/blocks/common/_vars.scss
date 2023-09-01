@@ -1,5 +1,51 @@
-$primary: #1C274C;
-$secondary: #004293;
-$white: #FFFFFF;
-$thirdy: #00F; 
-$icons: (1: url('../img/advantages/school.svg') no-repeat, 2: url('../img/advantages/hand-star.svg') no-repeat, 3: url('../img/advantages/home-furniture.svg') no-repeat);
+$icons: (1: url('../img/about/school.svg') no-repeat, 2: url('../img/about/hand-star.svg') no-repeat, 3: url('../img/about/home-furniture.svg') no-repeat);
+:root {
+    /* Common */
+    --uni-color-background: #fff;
+    --uni-color-theme: #27252E;
+    --uni-color-hover-and-active: #27252E;
+    --uni-color-additional: #000;
+
+    /* Headings */
+    --uni-headings-font: 'Ubuntu', sans-serif;
+    --uni-headings-general-font-size-h1: 2.25rem;
+    --uni-headings-general-font-size-h2: 1.875rem;
+    --uni-headings-general-font-size-h3: 1.75rem;
+    --uni-headings-general-font-size-h4: 1.5rem;
+    --uni-headings-general-font-size-h5: 1.25rem;
+    --uni-headings-color: #000;
+
+    /* Text */
+    --uni-text-font: 'Ubuntu-Regular', sans-serif;
+    --uni-text-font-bold: 'Ubuntu-Bold', sans-serif;
+    --uni-text-font-size: 0.938rem;
+    --uni-text-color: #1C274C;
+    --uni-text-color-2: #004293;
+    --uni-text-line-height: 19px;
+    --uni-text-paragraph-margin: 17px;
+
+    /* Links */
+    --uni-links-color: #27252E;
+    --uni-links-text-decoration-under-line: none;
+
+    /* Cards */
+    --uni-cards-border: 1px solid #eee;
+    --uni-cards-border-radius: 10px;
+    --uni-cards-box-shadow: 0px 8px 24px hsla(0, 0%, 79.1%, 0.25), 0px 16px 32px hsla(0, 0%, 79.1%, 0.2);
+
+    /* Inputs */
+    --uni-forms-input-border-radius: 4px;
+
+    /* Buttons */
+    --uni-buttons-font-size: 0.875rem;
+    --uni-buttons-text-color: #000000;
+    --uni-buttons-background-color: #27252E;
+    --uni-buttons-border-radius: 7px;
+    --uni-buttons-min-width: 100px;
+    --uni-buttons-size: 10px;
+    --uni-buttons-box-shadow: 0px 8px 24px hsla(0, 0%, 37.1%, 0.25), 0px 16px 32px hsla(0, 0%, 37.1%, 0.2);
+
+    /* Images */
+    --uni-images-border-radius: 13px;
+    --uni-images-box-shadow: 0px 8px 24px hsla(0, 0%, 61.1%, 0.25), 0px 16px 32px hsla(0, 0%, 61.1%, 0.2);
+}
