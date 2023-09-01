@@ -1,5 +1,27 @@
 .header {
     
+    .active-burger {
+        gap: 0;
+
+        span:first-child {
+            display: block;
+            transform: rotate(45deg);
+        }
+
+        span {
+            display: none;
+        }
+
+        span:last-child {
+            display: block;
+            transform: rotate(315deg);
+            margin-top: -3px;
+        }
+
+
+
+    }
+
     &__box {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
@@ -35,12 +57,21 @@
         padding: 10px;
         margin-right: 48px;
         grid-area: 1 / 1 / 2 / 2;
+        transition: 0.3s all;
         .line {
             width: 100%;
             height: 3.5px;
             background-color: $white;
             border-radius: 2px;
+            transition: 0.3s all;
         }
+        &:hover {
+            background-color: $white;
+            .line {
+                background-color: $primary;
+            }
+        }
+
         @include _992 {
             display: flex;
         }

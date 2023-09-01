@@ -1,3 +1,4 @@
+// Dropdown ссылки
 $('.dropdown-btn').hover(function(){
     $('.dropdown').css('display', 'flex').hide().slideDown();
 }, function(){
@@ -22,6 +23,14 @@ $('.link-house').hover(function(){
     $('.extra-house').css('display', 'none');
 });
 
+// Бургер кнопка
+$('.header__burger').click(function(){
+    if(!$(this).hasClass('active-burger')) {
+        $(this).addClass('active-burger');
+    } else {
+        $(this).removeClass('active-burger');
+    }
+});
 // function createCircle_1() {
 //     let section = document.querySelector(".bubble-container-1");
 //     let circleEl = document.createElement("span");
