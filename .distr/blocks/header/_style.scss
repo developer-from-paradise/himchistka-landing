@@ -474,12 +474,21 @@
         left: -80px;
         display: flex;
         gap: 22px;
-        padding: 48px 32px;
         border-radius: 24px;
         background: #fff;
         box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
         min-width: 648px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: .4s;
+        padding: 0;
 
+        &.active {
+            @media(min-width: 993px) {
+                padding: 48px 32px;
+            }
+            max-height: 900px;
+        }
         
         @include _992 {
             position: relative;
@@ -494,7 +503,11 @@
             box-shadow: unset;
             min-width: unset;
             width: 100%;
+        
+            
         }
+
+
 
         &-item {
             display: flex;
@@ -534,13 +547,6 @@
             @include _992 {
                 width: 100%;
                 padding-left: 16px;
-                max-height: 0px;
-                overflow: hidden;
-                transition: .4s;
-
-                &.active {
-                    max-height: 900px;
-                }
             }
         }
 

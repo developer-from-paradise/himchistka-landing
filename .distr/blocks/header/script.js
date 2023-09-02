@@ -1,61 +1,61 @@
 // Dropdown ссылки
 
-if (window.innerWidth > 992 ) {
-    // $('.dropdown-btn').hover(function(){
-    //     $('.dropdown').css('display', 'flex');
-    // }, function(){
-    //      $('.dropdown').css('display', 'none');
-    // });
+// if (window.innerWidth > 992 ) {
+//     // $('.dropdown-btn').hover(function(){
+//     //     $('.dropdown').css('display', 'flex');
+//     // }, function(){
+//     //      $('.dropdown').css('display', 'none');
+//     // });
     
-    // $('.link-cloth').hover(function(){
-    //     $('.extra-cloth').css('display', 'flex');
-    // }, function(){
-    //     $('.extra-cloth').css('display', 'none');
-    // });
+//     // $('.link-cloth').hover(function(){
+//     //     $('.extra-cloth').css('display', 'flex');
+//     // }, function(){
+//     //     $('.extra-cloth').css('display', 'none');
+//     // });
     
-    // $('.link-acce').hover(function(){
-    //     $('.extra-acce').css('display', 'flex');
-    // }, function(){
-    //     $('.extra-acce').css('display', 'none');
-    // });
+//     // $('.link-acce').hover(function(){
+//     //     $('.extra-acce').css('display', 'flex');
+//     // }, function(){
+//     //     $('.extra-acce').css('display', 'none');
+//     // });
     
-    // $('.link-house').hover(function(){
-    //     $('.extra-house').css('display', 'flex');
-    // }, function(){
-    //     $('.extra-house').css('display', 'none');
-    // });
+//     // $('.link-house').hover(function(){
+//     //     $('.extra-house').css('display', 'flex');
+//     // }, function(){
+//     //     $('.extra-house').css('display', 'none');
+//     // });
     
-} else {
-    let elements = $('.dropdown__main-link');
-    $('.dropdown__extra').each((index, element) => {
-        elements[index].after(element);
-    });
+// } else {
+//     let elements = $('.dropdown__main-link');
+//     $('.dropdown__extra').each((index, element) => {
+//         elements[index].after(element);
+//     });
 
     
 
 
 
 
-    $('.dropdown-btn-link').click(function(){
-        if($('.dropdown:visible').length == 0) {            
-            $('.dropdown').css('display', 'flex');
-        } else {
-            $('.dropdown').css('display', 'none');
-        }
-    });
+//     $('.dropdown-btn-link').click(function(){
+//         if($('.dropdown:visible').length == 0) {            
+//             $('.dropdown').css('display', 'flex');
+//         } else {
+//             $('.dropdown').css('display', 'none');
+//         }
+//     });
 
-    $('.dropdown__main-link').click(function(){
-        let dropdown_menu = $(this).next();
-        if (dropdown_menu.is(':visible')) {
-            dropdown_menu.css('display', 'none');
-        } else {
-            dropdown_menu.css('display', 'flex');
-        }
-    });
+//     $('.dropdown__main-link').click(function(){
+//         let dropdown_menu = $(this).next();
+//         if (dropdown_menu.is(':visible')) {
+//             dropdown_menu.css('display', 'none');
+//         } else {
+//             dropdown_menu.css('display', 'flex');
+//         }
+//     });
 
 
 
-}
+// }
 
 // Бургер кнопка
 $('.header__burger').click(function(){
@@ -98,29 +98,26 @@ function dropDownGenerate() {
 
 function dropdown() {
     const dropDownBtn = $('.dropdown-btn-text')
-    const dropDownList = $('.dropdown-skin-first')
+    const dropDownList = $('.dropdown-skin')
     const dropDownListBtn = $('.dropdown-skin-item-text')
     const dropDownListList = $('.dropdown-skin-item-list')
 
     dropDownBtn.click(function(e) {
         dropDownList.toggleClass('active')
     })
+
+    if (window.innerWidth <= DESCTOP) {
+        dropDownListBtn.next().hasClass('active') ? dropDownListBtn.next().removeClass('active') : null
+    } 
     dropDownListBtn.click(function() {
         $(this).next().toggleClass('active')
     })
+    $(window).on('resize', function() {
+        if (window.innerWidth <= DESCTOP) {
+         dropDownListBtn.next().hasClass('active') ? dropDownListBtn.next().removeClass('active') : null
+        }
+    })
 }
 
-if (window.innerWidth >= DESCTOP) {
-    dropDownGenerate()
-} else {
-    dropdown()
-}
-
-
-$(window).on('resize', function() {
-    if (window.innerWidth >= DESCTOP) {
-        dropDownGenerate()
-    } else {
-        dropdown()
-    }
-})
+dropdown()
+dropDownGenerate()
