@@ -19,25 +19,28 @@ if (window.innerWidth > 992 ) {
     
 } else {
 
-    $('.dropdown-btn').click(function(){
-        alert(123); 
+    $('.dropdown-btn-link').click(function(){
 
         if($('.dropdown-skin:visible').length == 0) { 
             $('.dropdown-skin').css('display', 'flex');
         } else {
-            alert(12333); 
+
             $('.dropdown-skin').css('display', 'none');
         }
     });
 
-    // $('.dropdown__main-link').click(function(){
-    //     let dropdown_menu = $(this).next();
-    //     if (dropdown_menu.is(':visible')) {
-    //         dropdown_menu.css('display', 'none');
-    //     } else {
-    //         dropdown_menu.css('display', 'flex');
-    //     }
-    // });
+    $('.dropdown-skin-item-text').click(function(){
+        if ($('.dropdown-skin-second:visible').length == 0) {
+            let lists = $(this).next().clone();
+            lists.css('display', 'flex');
+            $('.dropdown-skin-second').append(lists);
+            $('.dropdown-skin-second').css('display', 'flex');
+        } else {
+            $('.dropdown-skin-second').css('display', 'none');
+            $('.dropdown-skin-second').empty();
+        }
+        
+    });
 
 
 

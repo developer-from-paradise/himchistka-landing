@@ -504,11 +504,18 @@
             padding-bottom: 17px;
             border-bottom: 1px solid #FAFAFE;
 
+            @include _992 {
+                margin-left: 15px;
+                padding: unset;
+                
+            }
+
             .link {
                 position: relative;
             
                 &::after {
                     content: '';
+                    top: 4px;
                     position: absolute;
                     top: 10%;
                     right: 0;
@@ -517,6 +524,11 @@
                     background-image: url(../img/header/alt-right.png);
                     background-size: contain;
                     transition: 0.3s all;
+
+                    @include _992 {
+                        top: 4px !important;
+                        background-image: url('../img/header/alt-up.png');
+                    }
                 }
 
                 
