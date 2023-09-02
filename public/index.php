@@ -43,6 +43,8 @@
              </div>
     
              <nav class="header__navbar">
+                <div class="ppp">
+
                 <ul class="header__navbar-links">
                     <li class="header__navbar-link dropdown">
                         <div class="dropdown-btn-text">Услуги</div>  
@@ -122,6 +124,7 @@
                     <li class="header__navbar-link"><a href="#">О компании</a></li>
                     <li class="header__navbar-link"><a href="#">Контакты</a></li>
                 </ul>
+                </div>
                 
            </nav>
 
