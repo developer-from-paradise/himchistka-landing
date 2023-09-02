@@ -20,25 +20,25 @@
     
              <nav class="header__navbar">
                 <ul class="header__navbar-links">
-                    <li class="header__navbar-link dropdown">
-                        <div class="dropdown-btn-text">Услуги</div>  
+                    <li class="header__navbar-link dropdown-btn">
+                        <a href="#" class="dropdown-btn-text">Услуги</a>  
                         <div class="dropdown-skin">
                             <div class="dropdown-skin-first">
                                 <div class="dropdown-skin-item">
-                                    <div class="dropdown-skin-item-text">Одежда</div>
-                                    <div class="dropdown-skin-item-list">
-                                        <a href="#">Деловая-1</a>
-                                        <a href="#">Повседневная</a>
-                                        <a href="#">Торжественная</a>
-                                        <a href="#">Верхняя</a>
-                                        <a href="#">Детская</a>
-                                        <a href="#">Домашняя</a>
-                                        <a href="#">Спортивная</a>
-                                        <a href="#">Форменная</a>
-                                    </div>
+                                    <a href="#" class="dropdown-skin-item-text link">Одежда</a>
+                                    <ul class="dropdown-skin-item-list">
+                                        <li><a href="#" class="link">Деловая-1</a></li>
+                                        <li><a href="#" class="link">Повседневная</a></li>
+                                        <li><a href="#" class="link">Торжественная</a></li>
+                                        <li><a href="#" class="link">Верхняя</a></li>
+                                        <li><a href="#" class="link">Детская</a></li>
+                                        <li><a href="#" class="link">Домашняя</a></li>
+                                        <li><a href="#" class="link">Спортивная</a></li>
+                                        <li><a href="#" class="link">Форменная</a></li>
+                                    </ul>
                                 </div>
                                 <div class="dropdown-skin-item">
-                                    <div class="dropdown-skin-item-text">Аксессуары</div>
+                                    <a href="#" class="dropdown-skin-item-text link">Аксессуары</a>
                                     <div class="dropdown-skin-item-list">
                                         <a href="#">Деловая-2</a>
                                         <a href="#">Повседневная</a>
@@ -51,7 +51,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown-skin-item">
-                                    <div class="dropdown-skin-item-text">Домашний интерьер</div>
+                                    <a href="#" class="dropdown-skin-item-text link">Домашний интерьер</a>
                                     <div class="dropdown-skin-item-list">
                                         <a href="#">Деловая-3</a>
                                         <a href="#">Повседневная</a>
@@ -64,7 +64,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown-skin-item">
-                                    <div class="dropdown-skin-item-text">Обувь</div>
+                                    <a href="#" class="dropdown-skin-item-text link">Обувь</a>
                                     <div class="dropdown-skin-item-list">
                                         <a href="#">Деловая-4</a>
                                         <a href="#">Повседневная</a>
@@ -77,7 +77,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown-skin-item">
-                                    <div class="dropdown-skin-item-text">Особые услуги</div>
+                                    <a href="#" class="dropdown-skin-item-text link">Особые услуги</a>
                                     <div class="dropdown-skin-item-list">
                                         <a href="#">Деловая-5</a>
                                         <a href="#">Повседневная</a>
@@ -243,7 +243,7 @@
             </nav> -->
 
 
-           <a href="#fancyform" data-fancybox class="header__contacts-btn btn-w">
+           <a href="#form-section" class="header__contacts-btn btn-w">
                 <div class="header__contacts-btn-text">
                     <span class="header__contacts-btn-text-title">Заказать on-line</span>
                     <span class="header__contacts-btn-text-subtitle">заберём за три часа</span>

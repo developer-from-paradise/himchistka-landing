@@ -53,3 +53,8 @@
 //  } 
   
 // setInterval(createCircle_2, 50);
+
+
+$('[href="#form-section"]').click(function(){
+    $('html, body').animate({ scrollTop: $('#form-section').offset().top }, 'slow');
+});

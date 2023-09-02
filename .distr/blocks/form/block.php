@@ -1,4 +1,4 @@
-<section class="form-section">
+<section class="form-section" id="form-section">
     <div class="bubble-container-2">
         <!-- Котейнер для пузырьков -->
     </div>

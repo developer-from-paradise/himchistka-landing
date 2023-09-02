@@ -31,7 +31,7 @@
             </div>
             <span class="footer__contacts-subtext">Горячая линия</span>
  
-            <a href="tel:777777" class="footer__contacts-btn btn-w">
+            <a href="#form-section" class="footer__contacts-btn btn-w">
                 <div class="footer__contacts-btn-text">
                     <span class="footer__contacts-btn-text-title">Заказать on-line</span>
                     <span class="footer__contacts-btn-text-subtitle">заберём за три часа</span>
