@@ -1,5 +1,4 @@
 .header {
-    background: linear-gradient(to top, #81DDF7, #FEFFFF 59%);
     @include _992 {
         position: fixed;
         top: 0;
@@ -76,6 +75,10 @@
             width: 40px;
             height: 40px;
             padding: 9.46px;
+            justify-content: space-between;
+            gap: 0;
+            
+
 
             &:hover {
                 background-color: var(--uni-text-color-2);
@@ -421,6 +424,10 @@
                 
             }
 
+            @include _652 {
+                border-bottom: none;
+            }
+
             &-text {
                 position: relative;
             
@@ -604,11 +611,7 @@
                         top: 5px;
                     }
                 }
-                .link {
-                    // &::after {
-                    //     top: 10%;
-                    // }
-                }
+
             }
             
             
@@ -617,6 +620,11 @@
 }
 
 .active-burger {
+    @include _480 {
+        justify-content: space-evenly;
+
+    }
+
     span:first-child {
         display: block;
         transform: rotate(45deg);
@@ -630,5 +638,12 @@
         display: block;
         transform: rotate(315deg);
         margin-top: -13px;
+    }
+}
+
+.header-main {
+    background: linear-gradient(to top, #81DDF7, #FEFFFF 59%);
+    @include _992 {
+        background: #FFFFFF;
     }
 }

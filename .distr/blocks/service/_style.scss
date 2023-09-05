@@ -28,6 +28,9 @@
             margin: 0 auto;
         }
 
+        @include _480 {
+            padding: 40px;
+        }
         &-titles{
             &-subtitle{
                 font-size: 16px;
@@ -68,7 +71,7 @@
             gap: 24px;
             align-items: center;
 
-            @include _768 {
+            @include _652 {
                 flex-direction: column;
             }
 
@@ -89,7 +92,7 @@
                 background-color: #FFFFFF;
                 box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
 
-                @include _768 {
+                @include _652 {
                     max-width: 100%;
                 }
 
@@ -119,7 +122,7 @@
                 background-color: #FFFFFF;
                 box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
                 
-                @include _768 {
+                @include _652 {
                     max-width: 100%;
                     order: -1;
                 }

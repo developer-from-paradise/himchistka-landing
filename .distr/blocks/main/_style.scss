@@ -15,9 +15,17 @@
 
 
   @include _992 {
-    margin-top: 200px;
+    margin-top: 180px;
     padding: 72px 20px 48px;
   }
+
+  @include _652 {
+    margin-top: 200px;
+    background: linear-gradient(to top, #5CB4EE, #6BC7F2, #FFFFFF);
+    padding: 100px 20px 48px;
+  }
+
+
   .container {
     @include _480 {
       padding: 0;
@@ -34,7 +42,7 @@
       font-size: 32px;
     }
 
-    @include _768 {
+    @include _652 {
       font-size: 24px;
     }
   }
@@ -89,7 +97,7 @@
       padding: 56px 120px;
     }
 
-    @include _768 {
+    @include _652 {
       border-radius: 24px;
       padding: 24px;
       background: #F8FBFF;
@@ -118,7 +126,7 @@
         line-height: 24px;
         display: none;
 
-        @include _768 {
+        @include _652 {
           display: block;
         }
 
@@ -161,7 +169,7 @@
         left: 68%;
       }
 
-      @include _768 {
+      @include _652 {
         display: none;
       }
 
@@ -182,7 +190,7 @@
 
   .swiper {
     height: 120px;
-    @include _768 {
+    @include _652 {
       padding: 0 8px;
     }
 
@@ -221,7 +229,7 @@
         align-items: center;
         gap: 24px;
 
-        @include _768 {
+        @include _652 {
           width: calc(100% + 20px);
           left: 0;
           background: unset;
@@ -244,7 +252,7 @@
       left: unset;
       right: unset;
 
-      @include _768 {
+      @include _652 {
         display: none;
       }
 
@@ -291,7 +299,7 @@
       background: var(--uni-text-color-2);
       border-radius: 50%;
       
-      @include _768 {
+      @include _652 {
         transform: rotate(0deg);
       }
 

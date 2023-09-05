@@ -12,7 +12,7 @@
         padding-bottom: 40px;
         gap: 109px 56px;
         
-        @include _768 {
+        @include _652 {
             flex-direction: column;
             gap: 24px;
         }
@@ -28,7 +28,7 @@
             margin: 0 auto;
         }
 
-        @include _768 {
+        @include _652 {
             width: 100%;
             align-items: center;
         }
@@ -45,7 +45,7 @@
             font-size: 16px;
             font-weight: 300;
 
-            @include _768 {
+            @include _652 {
                 width: fit-content;
             }
         }
@@ -64,7 +64,7 @@
             margin-top: 23px;
             gap: 47px;
 
-            @include _768 {
+            @include _652 {
                 max-width: 100%;
             }
 
@@ -101,7 +101,7 @@
             margin-left: auto;
         }
 
-        @include _768 {
+        @include _652 {
             flex-direction: column;
             gap: 16px;
             margin: unset;
@@ -128,7 +128,7 @@
         }
 
         &-first {
-            @include _768 {
+            @include _652 {
                 gap: 0;
             }
         }
@@ -145,7 +145,7 @@
         display: flex;
         align-items: center;
 
-        @include _768 {
+        @include _652 {
             &.active {
                 color: var(--uni-text-color-2);
             }
@@ -159,7 +159,7 @@
             margin-left: 8px;
             display: none;
 
-            @include _768 {
+            @include _652 {
                 display: block;
             }
         }
@@ -169,7 +169,7 @@
             flex-direction: column;
             gap: 8px;
             
-            @include _768 {
+            @include _652 {
                 margin-top: 0px;
                 overflow: hidden;
                 max-height: 0px;
@@ -187,7 +187,7 @@
                 font-size: 14px;
                 font-weight: 400;
                 
-                @include _768 {
+                @include _652 {
                     &.active {
                         color: var(--uni-text-color-2);
                     }

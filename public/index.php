@@ -22,7 +22,7 @@
 
 <div class="wrapper">
 
-    <header class="header">
+    <header class="header header-main">
     <div class="container">
         <div class="header__box">
             <div class="header__burger">

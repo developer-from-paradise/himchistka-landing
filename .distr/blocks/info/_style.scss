@@ -129,7 +129,7 @@
 
             &:nth-child(1) {
                 left: calc(0% - -35vw);
-                animation: rockingAnimation-10 4s ease-in-out infinite;
+                animation: rockingAnimation-1 4s ease-in-out infinite;
 
                 @include _1279 {
                     left: calc(0% - -10vw);
@@ -138,7 +138,7 @@
             &:nth-child(2) {
                 left: calc(0% - -48vw);
                 top: calc(0% - -12vh);
-                animation: rockingAnimation-20 4s ease-in-out infinite;
+                animation: rockingAnimation-2 4s ease-in-out infinite;
                 @include _1279 {
                     left: calc(0% - -26vw);
                 }
@@ -146,7 +146,7 @@
             &:nth-child(3) {
                 left: calc(0% - -61vw);
                 top: calc(0% - -4vh);
-                animation: rockingAnimation-30 4s ease-in-out infinite;
+                animation: rockingAnimation-3 4s ease-in-out infinite;
                 @include _1279 {
                     left: calc(0% - -43vw);
                 }
@@ -154,7 +154,7 @@
             &:nth-child(4) {
                 left: calc(0% - -74vw);
                 top: calc(0% - -23vh);
-                animation: rockingAnimation-40 4s ease-in-out infinite;
+                animation: rockingAnimation-4 4s ease-in-out infinite;
                 @include _1279 {
                     left: calc(0% - -58vw);
                     top: calc(0% - -20vh);
@@ -168,6 +168,13 @@
                 animation: none !important;
             }
             
+            @include _768 {
+                max-width: 140px;
+                max-height: 140px;
+                font-size: 14px;
+                gap: 6px;
+            }
+
             @include _480 {
                 max-width: 120px;
                 max-height: 120px;
@@ -186,13 +193,38 @@
 
 
 
-@for $i from 10 through 40 {
-    @keyframes rockingAnimation-#{$i} {
-        0%, 100% {
-          transform: translateX(0);
-        }
-        50% {
-          transform: translate(#{randomNum(5, 20)}px, #{randomNum(5, 20)}px);
-        }
+@keyframes rockingAnimation-1 {
+    0%, 100% {
+      transform: translateX(13px);
+    }
+    50% {
+      transform: translateX(13px) translateY(20px);
+    }
+}
+
+@keyframes rockingAnimation-2 {
+    0%, 100% {
+      transform: translateX(20px);
+    }
+    50% {
+      transform: translateX(20px) translateY(13px);
+    }
+}
+
+@keyframes rockingAnimation-3 {
+    0%, 100% {
+      transform: translateX(15px);
+    }
+    50% {
+      transform: translateX(15px) translateY(23px);
+    }
+}
+
+@keyframes rockingAnimation-4 {
+    0%, 100% {
+      transform: translateX(12px);
+    }
+    50% {
+      transform: translateX(12px) translateY(15px);
     }
 }
