@@ -3,8 +3,9 @@
         <!-- Котейнер для пузырьков -->
     </div>
     <div class="container">
-        <div class="form-section__title">Закажите химчистку с доставкой!</div>
 
+        <div class="form-section__box">
+        <div class="form-section__title">Закажите химчистку с доставкой!</div>
         <form class="form-section__form">
             <input type="text" name="" class="form-section__form-input" placeholder="Ваше имя и фамилия*">
             <input type="tel" name="" class="form-section__form-input" placeholder="Телефон*"> 
@@ -29,6 +30,8 @@
         <div class="form-section__policy">
         Нажимая на кнопку «Заказать», вы даёте своё согласие на обработку персональных данных согласно <a href="" class="text-link">политике конфиденциальности</a>
         </div>
+        </div>
+        
     </div>
 </section>
 

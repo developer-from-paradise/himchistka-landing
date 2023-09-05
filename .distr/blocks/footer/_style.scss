@@ -24,7 +24,7 @@
         justify-content: space-between;
         align-items: flex-start;
 
-        @include _1280 {
+        @include _1279 {
             margin: 0 auto;
         }
 
@@ -97,7 +97,7 @@
         display: flex;
         gap: 77px;
 
-        @include _1280 {
+        @include _1279 {
             margin-left: auto;
         }
 

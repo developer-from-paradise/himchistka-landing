@@ -4,7 +4,7 @@
     padding: 136px 172px 183px;
     position: relative;
 
-    @include _1280 {
+    @include _1190 {
         padding: 136px 140px 40%;
     }
     
@@ -14,6 +14,9 @@
 
     &__container{
         display: flex;
+        @include _1740 {
+            padding: 0;
+        }
     }
     &__box {
         display: flex;
@@ -129,15 +132,12 @@
 
     &__img {
         position: absolute;
-        left: 50%;
+        left: 100%;
         bottom: 0;
         width: 1341px;
         
-        @include _1440 {
-            left: 62%;
-        }
 
-        @include _1280 {
+        @include _1190 {
             left: 6vw;
             width: 85%;
         }
@@ -154,7 +154,7 @@
                 left: 90%;
             }
             
-            @include _1280 {
+            @include _1190 {
                 bottom: -20%;
                 left: 50%;
                 transform: translate(-50%, 0);

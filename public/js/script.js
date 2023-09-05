@@ -5,16 +5,16 @@ if (window.innerWidth > 992 ) {
         $('.dropdown-skin').css('display', 'flex');
     }, function(){
          $('.dropdown-skin').css('display', 'none');
+        $('.dropdown-skin-second').css('display', 'none');
+         $('.dropdown-skin-second').empty();
     });
 
-    $('.dropdown-skin-item-text').hover(function(){
+    $('.dropdown-skin-item-text').click(function(){
+        $('.dropdown-skin-second').empty();
         let lists = $(this).next().clone();
         lists.css('display', 'flex');
         $('.dropdown-skin-second').append(lists);
         $('.dropdown-skin-second').css('display', 'flex');
-    }, function(){
-        $('.dropdown-skin-second').css('display', 'none');
-        $('.dropdown-skin-second').empty();
     });
     
 } else {
@@ -31,13 +31,10 @@ if (window.innerWidth > 992 ) {
 
     $('.dropdown-skin-item-text').click(function(){
         if ($('.dropdown-skin-second:visible').length == 0) {
-            let lists = $(this).next().clone();
-            lists.css('display', 'flex');
-            $('.dropdown-skin-second').append(lists);
-            $('.dropdown-skin-second').css('display', 'flex');
+            $(this).next().css('display', 'flex');
+            
         } else {
-            $('.dropdown-skin-second').css('display', 'none');
-            $('.dropdown-skin-second').empty();
+            $(this).next().css('display', 'none');
         }
         
     });
@@ -70,112 +67,69 @@ $('.header__burger').click(function(){
     }
 });
 
-// const DESKTOP = 1280
-
-// function dropDownGenerate() {
-//     const dropDownBtnBtn = $('.dropdown-skin-item-text')
-//     const dropDownListContent = document.querySelector('.dropdown-skin-second')
-//     const dropDownListList = document.querySelector('.dropdown-skin-item-list')
-
-//     dropDownListContent.innerHTML = dropDownListList.innerHTML
-
-//     dropDownBtnBtn.click(function() {
-//         dropDownListContent.innerHTML = $(this).next().html()
-//     })
-
-// }
-
-// function dropdown() {
-//     const dropDownBtn = $('.dropdown-btn-text');
-//     const dropDownList = $('.dropdown-skin-first');
-//     const dropDownListSecond = $('.dropdown-skin-first');
-//     const dropDownListBtn = $('.dropdown-skin-item-text');
-//     const dropDownListList = $('.dropdown-skin-item-list');
-
-//     dropDownBtn.click(function(e) {
-//         alert(123);
-//         dropDownList.css('display', 'flex');
-//         dropDownListSecond.css('display', 'flex');
-//     })
-//     dropDownListBtn.click(function() {
-//         $(this).next().toggleClass('active')
-//     })
-// }
-
-// if (window.innerWidth >= DESKTOP) {
-//     dropDownGenerate()
-// } else {
-//     dropdown()
-// }
-
-
-// $(window).on('resize', function() {
-//     if (window.innerWidth >= DESCTOP) {
-//         dropDownGenerate()
-//     } else {
-//         dropdown()
-//     }
-// })
-// function createCircle_1() {
-//     let section = document.querySelector(".bubble-container-1");
-//     let circleEl = document.createElement("span");
-//     let size = Math.random() * 60;
-//     let duration = Math.random() * 10;
+function createCircle_1() {
+    let section = document.querySelector(".bubble-container-1");
+    let circleEl = document.createElement("span");
+    let size = Math.random() * 60;
+    let duration = Math.random() * 10;
   
-//     // Максимальная допустимая позиция пузыря по горизонтали
-//     let maxLeft = window.innerWidth - 100 - size;
+    // Максимальная допустимая позиция пузыря по горизонтали
+    let maxLeft = window.innerWidth - 100 - size;
   
-//     // Вычисляем случайное положение пузыря, учитывая максимальную допустимую позицию
-//     let leftPosition = Math.random() * maxLeft;
+    // Вычисляем случайное положение пузыря, учитывая максимальную допустимую позицию
+    let leftPosition = Math.random() * maxLeft;
   
-//     circleEl.style.width = 20 + size + "px";
-//     circleEl.style.height = 20 + size + "px";
+    circleEl.style.width = 20 + size + "px";
+    circleEl.style.height = 20 + size + "px";
     
-//     // Устанавливаем leftPosition в пределах максимальной допустимой позиции
-//     circleEl.style.left = Math.min(Math.max(0, leftPosition), maxLeft) + "px";
+    // Устанавливаем leftPosition в пределах максимальной допустимой позиции
+    circleEl.style.left = Math.min(Math.max(0, leftPosition), maxLeft) + "px";
     
-//     section.appendChild(circleEl);
-  
-//     setTimeout(() => {
-//       circleEl.remove();
-//     }, 4000);
-//   }
-
-//   setInterval(createCircle_1, 50);
-
-
-
-// function createCircle_2() {
-//     let section = document.querySelector(".bubble-container-2");
-//     let circleEl = document.createElement("span");
-//     let size = Math.random() * 60;
-//     let duration = Math.random() * 10;
-  
-//     // Максимальная допустимая позиция пузыря по горизонтали
-//     let maxLeft = window.innerWidth - 100 - size;
-  
-//     // Вычисляем случайное положение пузыря, учитывая максимальную допустимую позицию
-//     let leftPosition = Math.random() * maxLeft;
-  
-//     circleEl.style.width = 20 + size + "px";
-//     circleEl.style.height = 20 + size + "px";
+    section.appendChild(circleEl);
     
-//     // Устанавливаем leftPosition в пределах максимальной допустимой позиции
-//     circleEl.style.left = Math.min(Math.max(0, leftPosition), maxLeft) + "px";
     
-//     section.appendChild(circleEl);
+
+    setTimeout(() => {
+      circleEl.remove();
+    }, 4000);
+  }
+
+setInterval(createCircle_1, 50);
+
   
-//     setTimeout(() => {
-//       circleEl.remove();
-//     }, 4000);
-//  } 
+
+function createCircle_2() {
+    let section = document.querySelector(".bubble-container-2");
+    let circleEl = document.createElement("span");
+    let size = Math.random() * 60;
+    let duration = Math.random() * 10;
   
-// setInterval(createCircle_2, 50);
+    // Максимальная допустимая позиция пузыря по горизонтали
+    let maxLeft = window.innerWidth - 100 - size;
+  
+    // Вычисляем случайное положение пузыря, учитывая максимальную допустимую позицию
+    let leftPosition = Math.random() * maxLeft;
+  
+    circleEl.style.width = 20 + size + "px";
+    circleEl.style.height = 20 + size + "px";
+    
+    // Устанавливаем leftPosition в пределах максимальной допустимой позиции
+    circleEl.style.left = Math.min(Math.max(0, leftPosition), maxLeft) + "px";
+    
+    section.appendChild(circleEl);
+  
+    setTimeout(() => {
+      circleEl.remove();
+    }, 4000);
+ } 
+  
+setInterval(createCircle_2, 50);
 
 
 $('[href="#form-section"]').click(function(){
     $('html, body').animate({ scrollTop: $('#form-section').offset().top }, 'slow');
 });
+
 
 var swiper = new Swiper(".main-swiper", {
   direction: "vertical",
@@ -191,32 +145,13 @@ var swiper = new Swiper(".main-swiper", {
   },
   on:{
     init:function(){
-      setSlideHeight(this);
       mainCounter()
     },
     slideChangeTransitionEnd:function(){
-      setSlideHeight(this);
       mainCounter()
     }
   }
 });
-
-function setSlideHeight(that){
-  $('.swiper-slide').css({height:'auto'});
-      var currentSlide = that.activeIndex;
-      var newHeight = $(that.slides[currentSlide]).height();
-
-
-
-       $('.swiper-wrapper,.swiper-slide').animate({ 
-        height : newHeight
-       })
-      that.update();
-}
-
-
-
-
 
 
 
@@ -476,12 +411,40 @@ var skroll = new Skroll()
 				animation:"slideInLeft",
 				delay:80,
 				duration:800
-			})
-      .add(".service__img",{
-				animation:"slideInRight",
-				delay:80,
-				duration:800
 			}).init();
+
+
+if(window.innerWidth > 1190) {
+	$(window).scroll(function() {
+		let hT = $('.service__img').offset().top,
+			hH = $('.service__img').outerHeight(),
+			wH = $(window).height(),
+			wS = $(this).scrollTop();
+
+		// Получаем значение свойства 'left' в пикселях
+		const leftInPixels = parseFloat($('.service__img').css('left'));
+
+		// Получаем ширину родительского элемента, в предположении, что .service__img находится внутри родительского элемента
+		const parentWidth = $('body').width();
+
+		// Переводим значение 'left' из пикселей в проценты
+		const leftInPercent = (leftInPixels / parentWidth) * 100;
+		
+		const minValue = 281.1526479750779;
+		const maxValue = 374.61059190031153;
+		const valueToConvert = (wS / hH) * 100; // Значение, которое вы хотите преобразовать
+
+
+		const scrollPercentage = 100 - ((valueToConvert - minValue) / (maxValue - minValue)) * 50;
+		console.log(leftInPercent);
+		if (leftInPercent > 50) {
+			console.log('moremore');
+
+			$('.service__img').css('left', scrollPercentage + '%');
+
+		}
+	});
+}
 //=require form-fancybox/script.js
 $(function() {
     function dropDownFooter() {

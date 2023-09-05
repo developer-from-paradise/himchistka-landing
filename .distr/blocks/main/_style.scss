@@ -2,11 +2,14 @@
   padding: 72px 20px 150px;
   display: flex;
   align-items: center;
-  background: linear-gradient(to top, #489DE8,  #6BC5F2, #FEFFFF);
+  background: linear-gradient(to top, #489DE8, #81DDF7);
   position: relative;
-  overflow: hidden;
   
-  @include _1280 {
+  @include _1440 {
+    padding: 0px 20px 150px;
+  }
+
+  @include _1279 {
     padding: 15px 0px 100px;
   }
 
@@ -27,7 +30,7 @@
     font-weight: 700;
     line-height: 100%;
     
-    @include _1280 {
+    @include _1279 {
       font-size: 32px;
     }
 
@@ -38,7 +41,7 @@
 
   &__text {
     height: fit-content;
-    @include _1280 {
+    @include _1279 {
       font-size: 14px;
     }
   }
@@ -82,7 +85,7 @@
       background-position: right -104px bottom 50%;
     }
 
-    @include _1280 {
+    @include _1279 {
       padding: 56px 120px;
     }
 
@@ -136,7 +139,7 @@
         max-width: 440px;
       }
 
-      @include _1280 {
+      @include _1279 {
         max-width: 360px;
         gap: 32px;
       }
@@ -169,18 +172,38 @@
         transform: translate(-50%, 0);
         width: 100%;
         object-fit: contain;
+
+        @include _1440 {
+          left: calc(50% - 8vw);
+        }
       }
     }
   }
 
   .swiper {
-
+    height: 120px;
     @include _768 {
       padding: 0 8px;
     }
 
     &-slide {
-      overflow: hidden;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        background: var(--uni-text-color-2);
+        border-radius: 8px;
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+          background: var(--uni-text-color-2);
+          border-radius: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+          border-radius: 8px;
+          background: #FFFFFF;
+      }
     }
 
     &-nav {

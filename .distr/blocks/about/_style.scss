@@ -19,7 +19,7 @@
         background: url('../img/about/frame.png');
     }
 
-    @include _1280 {
+    @include _1279 {
         &:after {
             left: 40vw;
         }
@@ -31,7 +31,7 @@
         }
     }
 
-    @include _1280 {
+    @include _1279 {
         background: url(../img/common/round.png) no-repeat, url(../img/common/round.png) no-repeat;
         background-size: 362px, 362px;
         background-position: calc(100% - -189px) calc(100% - -110px), calc(0% + -270px) calc(0% + -25px);
@@ -44,7 +44,7 @@
         justify-content: center;
         padding-top: 89px;
 
-        @include _1280 {
+        @include _1279 {
             padding: 0 100px;
             padding-top: 89px;
         }
@@ -62,7 +62,7 @@
         width: 50%;
         object-fit: cover;
         max-width: 645px;
-        @include _1280 {
+        @include _1279 {
             display: none;
         }
     }
@@ -70,7 +70,7 @@
     &__info {
         width: 50%;
         margin-bottom: 40px;
-        @include _1280 {
+        @include _1279 {
             width: 100%;
         }
         &-subtitle {

@@ -13,32 +13,13 @@ var swiper = new Swiper(".main-swiper", {
   },
   on:{
     init:function(){
-      setSlideHeight(this);
       mainCounter()
     },
     slideChangeTransitionEnd:function(){
-      setSlideHeight(this);
       mainCounter()
     }
   }
 });
-
-function setSlideHeight(that){
-  $('.swiper-slide').css({height:'auto'});
-      var currentSlide = that.activeIndex;
-      var newHeight = $(that.slides[currentSlide]).height();
-
-
-
-       $('.swiper-wrapper,.swiper-slide').animate({ 
-        height : newHeight
-       })
-      that.update();
-}
-
-
-
-
 
 
 

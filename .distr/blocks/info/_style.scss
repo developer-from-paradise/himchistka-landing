@@ -50,7 +50,7 @@
             background-color: #ffbd6c;
             border-radius: 50%;
 
-            @include _1280 {
+            @include _1279 {
                 left: calc(0% - 14vw);
             }
 
@@ -99,7 +99,7 @@
         left: calc(0% - -9vw);
         margin: auto auto 0 auto;
         
-        @include _1280 {
+        @include _1279 {
             left: calc(0% - -21vw);
         }
 
@@ -131,7 +131,7 @@
                 left: calc(0% - -35vw);
                 animation: rockingAnimation-10 4s ease-in-out infinite;
 
-                @include _1280 {
+                @include _1279 {
                     left: calc(0% - -10vw);
                 }
             }
@@ -139,7 +139,7 @@
                 left: calc(0% - -48vw);
                 top: calc(0% - -12vh);
                 animation: rockingAnimation-20 4s ease-in-out infinite;
-                @include _1280 {
+                @include _1279 {
                     left: calc(0% - -26vw);
                 }
             }
@@ -147,7 +147,7 @@
                 left: calc(0% - -61vw);
                 top: calc(0% - -4vh);
                 animation: rockingAnimation-30 4s ease-in-out infinite;
-                @include _1280 {
+                @include _1279 {
                     left: calc(0% - -43vw);
                 }
             }
@@ -155,7 +155,7 @@
                 left: calc(0% - -74vw);
                 top: calc(0% - -23vh);
                 animation: rockingAnimation-40 4s ease-in-out infinite;
-                @include _1280 {
+                @include _1279 {
                     left: calc(0% - -58vw);
                     top: calc(0% - -20vh);
 
