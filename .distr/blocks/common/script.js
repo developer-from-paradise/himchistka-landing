@@ -25,7 +25,7 @@ function createCircle_1() {
     }, 4000);
   }
 
-// setInterval(createCircle_1, 50);
+setInterval(createCircle_1, 50);
 
   
 
@@ -54,7 +54,7 @@ function createCircle_2() {
     }, 4000);
  } 
   
-// setInterval(createCircle_2, 50);
+setInterval(createCircle_2, 50);
 
 
 $('[href="#form-section"]').click(function(){
