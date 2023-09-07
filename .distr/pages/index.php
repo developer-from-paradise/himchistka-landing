@@ -22,8 +22,7 @@
 
 <div class="wrapper">
 
-    {#% include 'header/block.php' %#}
-    {% include 'header-new/block.php' %}
+    {% include 'header/block.php' %}
     {% include 'main/block.php' %}
     {% include 'about/block.php' %}
     {% include 'info/block.php' %}

@@ -114,71 +114,99 @@ input, textarea, button {
 	text-decoration: underline;
 }
 
-// .btn-b {
-// 	position: relative;
-// 	transition: 0.3s all;
-// 	overflow: hidden;
-// 	.btn-txt {
-// 		// z-index: 2;
-// 	}
-// 	svg {
-// 		// z-index: 2;
-// 	}
+.btn-b {
+	position: relative;
+	transition: 0.3s all;
+	overflow: hidden;
 	
-// 	&::before {
-// 		content:'';
-// 		position: absolute;
-// 		top: 0;
-// 		right: 0;
-// 		width: 0;
-// 		height: 100%;
-// 		background: var(--uni-text-color-2);
-// 		transition: all 0.3s ease;
-// 		color: #FFFFFF;
-// 		// z-index: 1;
-// 	  }
+	.btn-txt {
+		z-index: 1;
+	}
+
+	&:hover {
+		.btn-txt {
+			color: #ffffff;	
+		}
+		&:before {
+			width: calc(100% + 2px);
+			height: 290px;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		  }
+	}
+	
+	.btn-ico {
+		z-index: 1;
+	}
+	
+	&:before {
+		transition: .5s;
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		left: 95%;
+		height: 0;
+		width: 0;
+		border-radius: 50%;
+		background: #004293;
   
-// 	  &:hover {
-// 		color: #FFFFFF;
-		
-// 		&::before {
-// 		  width: 100%;
-// 			color: #FFFFFF;
-
-// 		}
-// 	  }
-// }
-
-// .btn-w {
-// 	position: relative;
-// 	transition: 0.3s all;
-// 	overflow: hidden;
-// 	.btn-txt {
-// 		// z-index: 2;
-// 	}
-// 	svg {
-// 		// z-index: 2;
-// 	}
-
-// 	&::before {
-// 		content:'';
-// 		position: absolute;
-// 		top: 0;
-// 		right: 0;
-// 		width: 0;
-// 		height: 100%;
-// 		background: #FFFFFF;
-// 		color: var(--uni-text-color-2);
-// 		transition: all 0.3s ease;
-// 		// z-index: 1;
-// 	}
+	  }
   
-// 	&:hover {
-// 		&::before {
-// 			width: 100%;
-// 		}
-// 	}
-// }
+	  &:hover {
+		&::before {
+			width: 100%;
+		}
+	  }
+}
+
+.btn-w {
+	position: relative;
+	transition: 0.3s all;
+	overflow: hidden;
+	
+	.btn-txt {
+		z-index: 1;
+	}
+
+	&:hover {
+		.btn-txt {
+			color: #004293;	
+		}
+		&:before {
+			width: calc(100% + 2px);
+			height: 290px;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		  }
+	}
+	
+	.btn-ico {
+		z-index: 1;
+	}
+	
+	&:before {
+		transition: .5s;
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		left: 95%;
+		height: 0;
+		width: 0;
+		border-radius: 50%;
+		background: #ffffff;
+  
+	  }
+  
+	  &:hover {
+		&::before {
+			width: 100%;
+		}
+	  }
+}
 
 
 .bubble-container-1, .bubble-container-2 {

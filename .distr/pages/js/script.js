@@ -1,4 +1,4 @@
-//=require header-new/script.js
+//=require header/script.js
 //=require common/script.js
 //=require main/script.js
 //=require about/script.js
