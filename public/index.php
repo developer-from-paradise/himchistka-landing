@@ -503,7 +503,7 @@
             <span class="footer__contacts-subtext">Горячая линия</span>
  
             <a href="#form-section" class="footer__contacts-btn btn-w">
-                <div class="footer__contacts-btn-text btn-text">
+                <div class="footer__contacts-btn-text btn-txt">
                     Заказать on-line <br>
                     <span>заберём за&nbsp;три часа</span>
                 </div>

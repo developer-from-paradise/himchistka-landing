@@ -28,11 +28,10 @@
     {% include 'rights/block.php' %}
     {% include 'form-fancybox/block.php' %}
 
-
 </div>
 
 
-    {% endblock %}
+{% endblock %}
 
     
     
