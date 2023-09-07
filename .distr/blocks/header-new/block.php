@@ -1,6 +1,17 @@
 <header class="header">
   <div class="container header__container">
-    <div class="header__logo"><img src="./img/common/logo.svg" alt="" class="header__logo-img"></div>
+    <div class="header__burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+
+    <div class="header__logo">
+      <img src="./img/common/logo.svg" alt="" class="header__logo-img">
+    </div>
+
+
+
     <div class="header__contacts">
       <div class="header__contacts-ico">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -14,7 +25,7 @@
         <div class="header__contacts-time">с&nbsp;8:00&nbsp;&mdash; 20:00</div>
       </div>
     </div>
-    <div class="nav active">
+    <div class="nav active animate__animated">
       <ul class="nav__list">
         <li class="nav__list-item dropdown">
           <div class="nav__list-item-link dropdown-btn-text">Услуги</div>  
@@ -107,8 +118,8 @@
         </li>
       </ul>
     </div>
-    <a href="#" class="header__button">
-      <div class="header__button-text">
+    <a href="#" class="header__button btn-w">
+      <div class="header__button-text btn-txt">
         Заказать on-line <br>
         <span>заберём за&nbsp;три часа</span>
       </div>

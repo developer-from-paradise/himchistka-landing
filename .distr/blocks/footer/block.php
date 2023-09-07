@@ -32,7 +32,7 @@
             <span class="footer__contacts-subtext">Горячая линия</span>
  
             <a href="#form-section" class="footer__contacts-btn btn-w">
-                <div class="footer__contacts-btn-text">
+                <div class="footer__contacts-btn-text btn-text">
                     <span class="footer__contacts-btn-text-title">Заказать on-line</span>
                     <span class="footer__contacts-btn-text-subtitle">заберём за три часа</span>
                 </div>

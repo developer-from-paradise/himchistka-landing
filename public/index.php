@@ -25,7 +25,18 @@
     
     <header class="header">
   <div class="container header__container">
-    <div class="header__logo"><img src="./img/common/logo.svg" alt="" class="header__logo-img"></div>
+    <div class="header__burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+
+    <div class="header__logo">
+      <img src="./img/common/logo.svg" alt="" class="header__logo-img">
+    </div>
+
+
+
     <div class="header__contacts">
       <div class="header__contacts-ico">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -39,7 +50,7 @@
         <div class="header__contacts-time">с&nbsp;8:00&nbsp;&mdash; 20:00</div>
       </div>
     </div>
-    <div class="nav active">
+    <div class="nav active animate__animated">
       <ul class="nav__list">
         <li class="nav__list-item dropdown">
           <div class="nav__list-item-link dropdown-btn-text">Услуги</div>  
@@ -132,8 +143,8 @@
         </li>
       </ul>
     </div>
-    <a href="#" class="header__button">
-      <div class="header__button-text">
+    <a href="#" class="header__button btn-w">
+      <div class="header__button-text btn-txt">
         Заказать on-line <br>
         <span>заберём за&nbsp;три часа</span>
       </div>
@@ -187,7 +198,7 @@
           </div>
         </div>
         <a href="#fancyform" data-fancybox class="main-btn btn-b">
-          <div class="main-btn__text">Вызвать курьера</div>
+          <div class="main-btn__text btn-txt">Вызвать курьера</div>
 
           <svg class="main-btn__ico" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.86609 2.31831C7.23882 2.00913 7.79998 2.05091 8.11946 2.41162L15.2306 10.4403C15.5159 10.7624 15.5159 11.2378 15.2306 11.5599L8.11946 19.5886C7.79998 19.9493 7.23882 19.9911 6.86609 19.6819C6.49335 19.3727 6.45019 18.8296 6.76967 18.4689L13.2223 11L6.76967 3.53125C6.45019 3.17054 6.49335 2.62749 6.86609 2.31831Z" fill="white"/>
@@ -219,7 +230,7 @@
                 </div>
 
                 <a href="#" class="about__info-btn btn-b fancylink">
-                    Скачать прайс
+                    <div class="btn-txt">Скачать прайс</div>
                     <svg class="about__info-btn-ico" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                         <path d="M11.3938 14.2043C11.2928 14.3148 11.15 14.3778 11.0002 14.3778C10.8505 14.3778 10.7077 14.3148 10.6066 14.2043L7.76217 11.0932C7.56341 10.8758 7.57852 10.5385 7.79591 10.3397C8.0133 10.1409 8.35065 10.1561 8.5494 10.3734L10.4669 12.4707V4.59998C10.4669 4.30543 10.7057 4.06665 11.0002 4.06665C11.2948 4.06665 11.5336 4.30543 11.5336 4.59998V12.4707L13.4511 10.3734C13.6498 10.1561 13.9872 10.1409 14.2046 10.3397C14.4219 10.5385 14.437 10.8758 14.2383 11.0932L11.3938 14.2043Z" fill="white"/>
                         <path d="M5.13356 13.1333C5.13356 12.8388 4.89478 12.6 4.60023 12.6C4.30568 12.6 4.06689 12.8388 4.06689 13.1333V13.1723C4.06688 14.1448 4.06687 14.9287 4.14976 15.5452C4.23581 16.1853 4.41991 16.7242 4.84794 17.1523C5.27597 17.5803 5.81491 17.7644 6.45498 17.8505C7.07149 17.9333 7.85537 17.9333 8.82788 17.9333H13.1726C14.1451 17.9333 14.929 17.9333 15.5455 17.8505C16.1856 17.7644 16.7245 17.5803 17.1525 17.1523C17.5805 16.7242 17.7646 16.1853 17.8507 15.5452C17.9336 14.9287 17.9336 14.1448 17.9336 13.1723V13.1333C17.9336 12.8388 17.6948 12.6 17.4002 12.6C17.1057 12.6 16.8669 12.8388 16.8669 13.1333C16.8669 14.1541 16.8658 14.866 16.7935 15.4031C16.7234 15.9249 16.5951 16.2012 16.3983 16.398C16.2015 16.5948 15.9251 16.7231 15.4033 16.7933C14.8662 16.8655 14.1543 16.8667 13.1336 16.8667H8.8669C7.84616 16.8667 7.13425 16.8655 6.59711 16.7933C6.07532 16.7231 5.799 16.5948 5.60219 16.398C5.40538 16.2012 5.27706 15.9249 5.20691 15.4031C5.13469 14.866 5.13356 14.1541 5.13356 13.1333Z" fill="white"/>
@@ -281,12 +292,12 @@
             </div>
             <div class="service__box-buttons">
                 <a class="service__box-buttons-btn1 btn-b" data-fancybox href="#fancyform">
-                    Заказать доставку
+                    <div class="btn-txt">Заказать доставку</div>
                     <svg class="service__box-buttons-btn1-ico" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.86609 2.31819C7.23882 2.00901 7.79998 2.05078 8.11946 2.41149L15.2306 10.4402C15.5159 10.7623 15.5159 11.2377 15.2306 11.5598L8.11946 19.5885C7.79998 19.9492 7.23882 19.9909 6.86609 19.6818C6.49335 19.3726 6.45019 18.8295 6.76967 18.4688L13.2223 10.9999L6.76967 3.53113C6.45019 3.17042 6.49335 2.62737 6.86609 2.31819Z" fill="white"/>
                     </svg>
                 </a>
-                <a class='service__box-buttons-btn2 btn-b' href="#">Подробнее</a>
+                <a class='service__box-buttons-btn2 btn-b' href="#"><div class="btn-txt">Подробнее</div></a>
             </div>
         </div>
 
@@ -440,7 +451,7 @@
             </div>
             
             <button type="submit" class="form-section__form-btn btn-b">
-                Заказать
+                <div class="btn-txt">Заказать</div>
                 <svg class="form-section__form-btn-ico" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.86609 2.31819C7.23882 2.00901 7.79998 2.05078 8.11946 2.41149L15.2306 10.4402C15.5159 10.7623 15.5159 11.2377 15.2306 11.5598L8.11946 19.5885C7.79998 19.9492 7.23882 19.9909 6.86609 19.6818C6.49335 19.3726 6.45019 18.8295 6.76967 18.4688L13.2223 10.9999L6.76967 3.53113C6.45019 3.17042 6.49335 2.62737 6.86609 2.31819Z" fill="white"/>
                 </svg>
@@ -490,7 +501,7 @@
             <span class="footer__contacts-subtext">Горячая линия</span>
  
             <a href="#form-section" class="footer__contacts-btn btn-w">
-                <div class="footer__contacts-btn-text">
+                <div class="footer__contacts-btn-text btn-text">
                     <span class="footer__contacts-btn-text-title">Заказать on-line</span>
                     <span class="footer__contacts-btn-text-subtitle">заберём за три часа</span>
                 </div>
@@ -534,7 +545,7 @@
             </div>
             
             <button type="submit" class="form-fancybox__form-btn btn-b">
-                Заказать
+                <div class="btn-txt">Заказать</div>
                 <svg class="form-fancybox__form-btn-ico" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.86609 2.31819C7.23882 2.00901 7.79998 2.05078 8.11946 2.41149L15.2306 10.4402C15.5159 10.7623 15.5159 11.2377 15.2306 11.5598L8.11946 19.5885C7.79998 19.9492 7.23882 19.9909 6.86609 19.6818C6.49335 19.3726 6.45019 18.8295 6.76967 18.4688L13.2223 10.9999L6.76967 3.53113C6.45019 3.17042 6.49335 2.62737 6.86609 2.31819Z" fill="white"/>
                 </svg>

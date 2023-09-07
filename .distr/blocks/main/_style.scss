@@ -6,11 +6,11 @@
   position: relative;
   
   @include _1440 {
-    padding: 0px 20px 150px;
+    padding: 50px 0px 100px;
   }
 
   @include _1279 {
-    padding: 15px 0px 100px;
+    margin-top: 140px;
   }
 
 
