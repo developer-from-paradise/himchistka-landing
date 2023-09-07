@@ -114,23 +114,71 @@ input, textarea, button {
 	text-decoration: underline;
 }
 
-.btn-b {
-	transition: 0.3s all;
+// .btn-b {
+// 	position: relative;
+// 	transition: 0.3s all;
+// 	overflow: hidden;
+// 	.btn-txt {
+// 		// z-index: 2;
+// 	}
+// 	svg {
+// 		// z-index: 2;
+// 	}
+	
+// 	&::before {
+// 		content:'';
+// 		position: absolute;
+// 		top: 0;
+// 		right: 0;
+// 		width: 0;
+// 		height: 100%;
+// 		background: var(--uni-text-color-2);
+// 		transition: all 0.3s ease;
+// 		color: #FFFFFF;
+// 		// z-index: 1;
+// 	  }
+  
+// 	  &:hover {
+// 		color: #FFFFFF;
+		
+// 		&::before {
+// 		  width: 100%;
+// 			color: #FFFFFF;
 
-	&:hover {
-		background-color: var(--uni-text-color-2);
-		color: #FFFFFF;
-	}
-}
+// 		}
+// 	  }
+// }
 
-.btn-w {
-	transition: 0.3s all;
+// .btn-w {
+// 	position: relative;
+// 	transition: 0.3s all;
+// 	overflow: hidden;
+// 	.btn-txt {
+// 		// z-index: 2;
+// 	}
+// 	svg {
+// 		// z-index: 2;
+// 	}
 
-	&:hover {
-		background-color: #FFFFFF;
-		color: var(--uni-text-color-2);
-	}
-}
+// 	&::before {
+// 		content:'';
+// 		position: absolute;
+// 		top: 0;
+// 		right: 0;
+// 		width: 0;
+// 		height: 100%;
+// 		background: #FFFFFF;
+// 		color: var(--uni-text-color-2);
+// 		transition: all 0.3s ease;
+// 		// z-index: 1;
+// 	}
+  
+// 	&:hover {
+// 		&::before {
+// 			width: 100%;
+// 		}
+// 	}
+// }
 
 
 .bubble-container-1, .bubble-container-2 {
@@ -167,7 +215,9 @@ input, textarea, button {
 		display: none;
 	  }
 }
-  
+
+
+
 
 @keyframes animate {
 	0% {
